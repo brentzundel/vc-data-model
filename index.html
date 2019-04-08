@@ -1132,7 +1132,7 @@ about the type.
   ],
   "id": "http://example.edu/credentials/3732",
   <span class="highlight">"type": ["VerifiableCredential", "UniversityDegreeCredential"]</span>,
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -1245,7 +1245,7 @@ process this additional information.
 
         <p>
 When processing encapsulated objects defined in this specification, (for
-example, objects associated with the <code>credentialSubject</code> object
+example, objects associated with the <code>claim</code> object
 or deeply nested therein), software systems SHOULD use the <a>type</a>
 information specified in encapsulating objects higher in the hierarchy.
 Specifically, an encapsulating object, such as <a>credential</a>, SHOULD
@@ -1257,7 +1257,7 @@ object <a>type</a>.
         <p>
 For example, a <a>credential</a> object with the <code>type</code> of
 <code>UniversityDegreeCredential</code>, signals to a <a>verifier</a> that the
-object associated with the <code>credentialSubject</code> property contains the
+object associated with the <code>claim</code> property contains the
 identifier for the:
         </p>
 
@@ -1286,28 +1286,37 @@ representation.
 
 
       <section>
-        <h3>Credential Subject</h3>
+        <h3>Claims</h3>
 
         <p>
 A <a>verifiable credential</a> contains <a>claims</a> about one or
 more <a>subjects</a>. This specification defines a
-<code>credentialSubject</code> <a>property</a> for the expression of
+<code>claim</code> <a>property</a> for the expression of
 <a>claims</a> about one or more <a>subjects</a>.
-A <a>verifiable credential</a> MUST have a <code>credentialSubject</code>
+A <a>verifiable credential</a> MUST have a <code>claim</code>
 <a>property</a>.
         </p>
 
         <dl>
-          <dt>credentialSubject</dt>
+          <dt>claim</dt>
           <dd>
-The value of the <code>credentialSubject</code> <a>property</a> is defined as
+The value of the <code>claim</code> <a>property</a> is defined as
 a set of objects that contain one or more properties that are each related to a
 <a>subject</a> of the <a>verifiable credential</a>. Each object MAY contain an
 <code>id</code> as described in Section <a href="#identifiers"></a>.
           </dd>
+
+        <p class="note">
+A <a>verifiable credential</a> that contains <a>claims</a> about more than one
+<a>subject</a> could have an array of objects as the value of the
+<code>claim</code> <a>property</a>, one for each <a>claim</a> subject. As with
+<a>verifiable credentials</a> that contain <a>claims</a> about a single subject,
+the <code>id</code> <a>property</a> of each object in the <code>claim</code>
+array would be the <code>id</code> of the subject.
+        </p>
         </dl>
 
-        <pre class="example nohighlight" title="Usage of the credentialSubject property">
+        <pre class="example nohighlight" title="Usage of the claim property">
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
@@ -1315,7 +1324,7 @@ a set of objects that contain one or more properties that are each related to a
   ],
   "id": "http://example.edu/credentials/3732",
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
-  <span class="highlight">"credentialSubject"</span>: {
+  <span class="highlight">"claim"</span>: {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -1359,7 +1368,7 @@ the <a>credential</a>.
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   <span class="highlight">"issuer": "https://example.edu/issuers/14"</span>,
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -1394,7 +1403,7 @@ The value of the <code>issuanceDate</code> <a>property</a> MUST be a string
 value of an [[!RFC3339]] combined date and time string representing the date
 and time the <a>credential</a> was issued. Note that this date represents the
 earliest date when the information associated with the
-<code>credentialSubject</code> <a>property</a> became valid.
+<code>claim</code> <a>property</a> became valid.
           </dd>
         </dl>
 
@@ -1408,7 +1417,7 @@ earliest date when the information associated with the
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   <span class="highlight">"issuanceDate": "2010-01-01T19:23:24Z"</span>,
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -1466,7 +1475,7 @@ the signing date. The example below uses RSA digital signatures.
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu",
   "issuanceDate": "2010-01-01T19:73:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -1520,7 +1529,7 @@ the date and time the <a>credential</a> ceases to be valid.
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
   <span class="highlight">"expirationDate": "2020-01-01T19:23:24Z"</span>,
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -1581,7 +1590,7 @@ is privacy-enhancing.
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -1930,7 +1939,7 @@ Let us assume we start with the <a>verifiable credential</a> shown below.
   "type": ["VerifiableCredential"],
   "issuer": "https://example.com/issuers/14",
   "issuanceDate": "2018-02-24T05:28:04Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:abcdef1234567",
     "name": "Jane Doe"
   },
@@ -1985,7 +1994,7 @@ this example by including the context and adding the new <a>properties</a> and
   "issuer": "https://example.com/issuers/14",
   "issuanceDate": "2018-02-24T05:28:04Z",
   <span class="highlight">"referenceNumber": 83294847,</span>
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:abcdef1234567",
     "name": "Jane Doe",
     <span class="highlight">"favoriteFood": "Papaya"</span>
@@ -2102,7 +2111,7 @@ specific type definition.
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -2147,7 +2156,7 @@ see Section <a href="#zero-knowledge-proofs"></a>.
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -2230,7 +2239,7 @@ the specific <code>refreshService</code> <a>type</a> definition.
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -2313,7 +2322,7 @@ definition.
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -2354,7 +2363,7 @@ in an archive.
     "type": ["VerifiableCredential", "UniversityDegreeCredential"],
     "issuer": "https://example.edu/issuers/14",
     "issuanceDate": "2010-01-01T19:23:24Z",
-    "credentialSubject": {
+    "claim": {
       "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
       "degree": {
       "type": "BachelorDegree",
@@ -2449,7 +2458,7 @@ non-credential data may be supported by the specification, please refer to the
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
       "type": "BachelorDegree",
@@ -2580,7 +2589,7 @@ of the <a>verifiable credential</a> in a way that supports the privacy of the
     "type": "did:example:schema:22KpkXgecryx9k7N6XN1QoN3gXwBkSU8SfyyYQG"
   }</span>,
   "issuer": "did:example:Wz4eUg7SetGfaUVCn8U9d62oDYrUJLuUtcy619",
-  "credentialSubject": {
+  "claim": {
     "givenName": "Jane",
     "familyName": "Doe",
     "degree": {
@@ -2651,7 +2660,7 @@ intend to share.
       "type": "did:example:schema:22KpkXgecryx9k7N6XN1QoN3gXwBkSU8SfyyYQG"
     }</span>,
     "issuer": "did:example:Wz4eUg7SetGfaUVCn8U9d62oDYrUJLuUtcy619",
-    "credentialSubject": {
+    "claim": {
       "degreeType": "BachelorDegree",
       "degreeSchool": "College of Engineering"
       }
@@ -2750,7 +2759,7 @@ an attacker falsely disputes a true claim.
 
         <p>
 The mechanism for issuing a <code>DisputeCredential</code> is the same as
-for a regular <a>credential</a> except that the <code>credentialSubject</code>
+for a regular <a>credential</a> except that the <code>claim</code>
 identifier in the <code>DisputeCredential</code> property is the identifier of
 the disputed <a>credential</a>.
         </p>
@@ -2773,7 +2782,7 @@ that the <a>credential</a> is disputed.
   ],
   "id": "http://example.com/credentials/123",
   "type": ["VerifiableCredential", "DisputeCredential"],
-  <span class="highlight">"credentialSubject": {
+  <span class="highlight">"claim": {
     "id": "http://example.com/credentials/245",
     "currentStatus": "Disputed",
     "statusReason": {
@@ -2793,7 +2802,7 @@ that the <a>credential</a> is disputed.
   "@context": "https://w3id.org/credentials/v1",
   "id": "http://example.com/credentials/321",
   "type": ["VerifiableCredential", "DisputeCredential"],
-  <span class="highlight">"credentialSubject": {
+  <span class="highlight">"claim": {
     "id": "http://example.com/credentials/245",
     "currentStatus": "Disputed",
     "statusReason": {
@@ -3146,7 +3155,7 @@ in the <a>verifiable credential</a> <a>subject</a>.
             <p>
 Other JOSE header parameters and <a>claim</a> names not specified herein can be
 used if their use is not explicitly discouraged. Additional <a>claims</a> MUST
-be added to the <code>credentialSubject</code> <a>property</a> of the JWT.
+be added to the <code>claim</code> <a>property</a> of the JWT.
             </p>
 
             <p>
@@ -3192,7 +3201,7 @@ done. If:
 <code>exp</code> is present, the UNIX timestamp MUST be converted to an
 [[!RFC3339]] <code>date-time</code>, and MUST be used to set the value
 of the <code>expirationDate</code> <a>property</a> of
-<code>credentialSubject</code> of the new JSON object.
+<code>claim</code> of the new JSON object.
                   </li>
                   <li>
 <code>iss</code> is present, the value MUST be used to set the
@@ -3205,7 +3214,7 @@ of the <code>issuanceDate</code> <a>property</a> of the new JSON object.
                   </li>
                   <li>
 <code>jti</code> is present, the value MUST be used to set the value of the
-<code>id</code> <a>property</a> of <code>credentialSubject</code> of the new
+<code>id</code> <a>property</a> of <code>claim</code> of the new
 JSON object.
                   </li>
                   <li>
@@ -3243,7 +3252,7 @@ header parameter.
       "https://www.w3.org/2018/credentials/examples/v1"
     ],
     "type": ["VerifiableCredential", "UniversityDegreeCredential"],
-    "credentialSubject": {
+    "claim": {
       "degree": {
         "type": "BachelorDegree",
         "name": "&lt;span lang='fr-CA'>Baccalauréat en musiques numériques&lt;/span>"
@@ -3258,7 +3267,7 @@ In the example above, <code>vc</code> does not contain the <code>id</code>
 <a>property</a> because the <code>JWT</code> encoding uses the <code>jti</code>
 attribute to represent a unique identifier. The <code>sub</code> attribute
 encodes the information represented by the <code>id</code> <a>property</a> of
-<code>credentialSubject</code>.
+<code>claim</code>.
             </p>
 
             <pre class="example nohighlight" title="Verifiable credential using JWT compact serialization (non-normative)">
@@ -3478,7 +3487,7 @@ privacy.
 
       <p>
 Data associated with <a>verifiable credentials</a> stored in the
-<code>credential.credentialSubject</code> field is susceptible to privacy
+<code>credential.claim</code> field is susceptible to privacy
 violations when shared with <a>verifiers</a>. Personally identifying data, such
 as a government-issued identifier, shipping address, and full name, can be
 easily used to determine, track, and correlate an <a>entity</a>. Even
@@ -3502,7 +3511,7 @@ issuing <code>ageOver</code> <a>credentials</a> instead of date of birth
 
       <p>
 <a>Subjects</a> of <a>verifiable credentials</a> are identified using the
-<code>credential.credentialSubject.id</code> field. The identifiers used to
+<code>credential.claim.id</code> field. The identifiers used to
 identify a <a>subject</a> create a greater risk of correlation when the
 identifiers are long-lived or used across more than one web domain.
       </p>
@@ -3716,7 +3725,7 @@ would not result in large economic or reputational losses.
 <a>Verifiable credentials</a> that are bearer <a>credentials</a> are made
 possible by not specifying the <a>subject</a> identifier, expressed using the
 <code>id</code> <a>property</a>, which is nested in the
-<code>credentialSubject</code> <a>property</a>. For example, the following
+<code>claim</code> <a>property</a>. For example, the following
 <a>verifiable credential</a> is a bearer <a>credential</a>:
       </p>
 
@@ -3730,7 +3739,7 @@ possible by not specifying the <a>subject</a> identifier, expressed using the
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2017-10-22T12:23:48Z",
-  "credentialSubject": {
+  "claim": {
     <span class="comment">// note that the 'id' property is not specified for bearer credentials</span>
     "degree": {
       "type": "BachelorDegree",
@@ -4185,7 +4194,7 @@ protected and probably should be:
   ],
   "id": "http://example.edu/credentials/58473",
   "type": ["VerifiableCredential", "AlumniCredential"],
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "image": <span class="highlight">"https://example.edu/images/58473"</span>,
     "alumniOf": "&lt;span lang='en'>Example University&lt;/span>"
@@ -4214,7 +4223,7 @@ image by using an IPFS link:
   ],
   "id": "http://example.edu/credentials/58473",
   "type": ["VerifiableCredential", "AlumniCredential"],
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "image": <span class="highlight">"ipfs:/ipfs/QmXfrS3pHerg44zzK6QKQj6JDk8H6cMtQS7pdXbohwNQfK/image"</span>,
     "alumniOf": "&lt;span lang='en'>Example University&lt;/span>"
@@ -4497,7 +4506,7 @@ expected usage of the data fields in this specification by <a>verifiers</a>.
         <p>
 In the <a>verifiable credentials</a> presented by a <a>holder</a>, the
 value associated with the <code>id</code> <a>property</a> for each
-<code>credentialSubject</code> is expected to identify a <a>subject</a> to the
+<code>claim</code> is expected to identify a <a>subject</a> to the
 <a>verifier</a>. If the <a>holder</a> is also the <a>subject</a>, then
 the <a>verifier</a> could authenticate the <a>holder</a> if they have
 public key metadata related to the <a>holder</a>. The <a>verifier</a> could then
@@ -4705,7 +4714,7 @@ this case, a <a>verifier</a> can easily deduce that a <a>subject</a> is the
         </p>
 
         <p>
-If only the <code>credentialSubject</code> is allowed to insert a
+If only the <a>subject</a> is allowed to insert a
 <a>verifiable credential</a> into a <a>verifiable presentation</a>, the
 <a>issuer</a> may insert the <code>nonTransferable</code> <a>property</a> into the
 <a>verifiable credential</a>, as described below.
@@ -4718,9 +4727,9 @@ If only the <code>credentialSubject</code> is allowed to insert a
 The <code>nonTransferable</code> <a>property</a> indicates that a
 <a>verifiable credential</a> must only be encapsulated into a
 <a>verifiable presentation</a> whose proof was issued by the
-<code>credentialSubject</code>. A <a>verifiable presentation</a> that contains
+<a>subject</a>. A <a>verifiable presentation</a> that contains
 a <a>verifiable credential</a> containing the <code>nonTransferable</code>
-<a>property</a>, whose proof creator is not the <code>credentialSubject</code>,
+<a>property</a>, whose proof creator is not the <a>subject</a>,
 is invalid.
           </p>
 
@@ -4730,7 +4739,7 @@ is invalid.
   "type": ["VerifiableCredential", "ProofOfAgeCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "ageOver": 21
     },
@@ -4747,7 +4756,7 @@ is invalid.
         <h4>Credential Uniquely Identifies a Subject</h4>
 
         <p>
-In this case, the <code>credentialSubject</code> <a>property</a> might contain
+In this case, the <code>claim</code> <a>property</a> might contain
 multiple <a>properties</a> each providing an aspect of the identity of the
 <a>subject</a>, which together, unambiguously identify the <a>subject</a>.
 Some use cases might not require the <a>holder</a> to be identified at all,
@@ -4763,7 +4772,7 @@ to determine the relationship between the <a>subject</a> and the <a>holder</a>.
   "type": ["VerifiableCredential", "IdentityCredential"],
   "issuer": "https://example.edu/issuers/4",
   "issuanceDate": "2017-02-24T19:73:24Z",
-  "credentialSubject": {
+  "claim": {
     "name": "J. Doe",
     "address": {
       "streetAddress": "10 Rue de Chose",
@@ -4820,7 +4829,7 @@ behalf of the <a>subject</a> in at least the following ways. The:
         <ul>
           <li>
 <a>Issuer</a> can include the relationship between the <a>holder</a> and
-the <a>subject</a> in the <code>credentialSubject</code> <a>property</a>.
+the <a>subject</a> in the <code>claim</code> <a>property</a>.
           </li>
           <li>
 <a>Issuer</a> can express the relationship between the <a>holder</a> and
@@ -4850,7 +4859,7 @@ outside the scope of this specification.
   "type": ["VerifiableCredential", "AgeCredential", "RelationshipCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "ageUnder": 16,
     "parent": {
@@ -4873,7 +4882,7 @@ child and the parent such that a <a>verifier</a> would most likely accept the
   "type": ["VerifiableCredential", "RelationshipCredential"],
   "issuer": "https://example.edu/issuers/14",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1c276e12ec211f712ebc6f",
     "child": {
       "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
@@ -4897,7 +4906,7 @@ provided with any of the child's <a>credentials</a>.
   "type": ["VerifiableCredential", "RelationshipCredential"],
   "issuer": "http://example.org/credentials/23894",
   "issuanceDate": "2010-01-01T19:23:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "parent": {
       "id": "did:example:ebfeb1c276e12ec211f712ebc6f",
@@ -4962,7 +4971,7 @@ verifiable credential that was passed to it by the subject">
       "type": ["VerifiableCredential", "PrescriptionCredential"],
       "issuer": "https://example.edu",
       "issuanceDate": "2010-01-01T19:73:24Z",
-      "credentialSubject": {
+      "claim": {
         "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
         "prescription": {....}
       },
@@ -4977,7 +4986,7 @@ verifiable credential that was passed to it by the subject">
       "type": ["VerifiableCredential", "PrescriptionCredential"],
       "issuer": "did:example:ebfeb1f712ebc6f1c276e12ec21",
       "issuanceDate": "2010-01-03T19:73:24Z",
-      "credentialSubject": {
+      "claim": {
         "id": "did:example:76e12ec21ebhyu1f712ebc6f1z2",
         "prescription": {....}
       },
@@ -5048,7 +5057,7 @@ the subject of the credential, but who has a relationship with the issuer">
     "id": "did:example:ebfeb1276e12ec21f712ebc6f1c"
   },
   "issuanceDate": "2010-01-01T19:73:24Z",
-  "credentialSubject": {
+  "claim": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "name": "Mr John Doe",
     "address": "10 Some Street, Anytown, ThisLocal, Country X"
