@@ -66,7 +66,7 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
   "name": "Verifiable Credentials Data Model 1.1",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-  "datePublished": "2021-10-06",
+  "datePublished": "2021-10-17",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -871,19 +871,19 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
   "wgPatentURI": "https://www.w3.org/2004/01/pp-impl/98922/status",
   "maxTocLevel": 2,
   "inlineCSS": true,
-  "publishISODate": "2021-10-06T00:00:00.000Z",
-  "generatedSubtitle": "Recommendation 06 October 2021"
+  "publishISODate": "2021-10-17T00:00:00.000Z",
+  "generatedSubtitle": "Recommendation 17 October 2021"
 }</script><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-REC"></head>
   <body class="h-entry"><div class="head">
     <a class="logo" href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" width="72" height="48"></a> <h1 id="title" class="title">Verifiable Credentials Data Model 1.1</h1>
     <h2 id="subtitle" class="subtitle">Expressing verifiable information on the Web</h2>
     <h2>
       W3C Recommendation
-      <time class="dt-published" datetime="2021-10-06">06 October 2021</time>
+      <time class="dt-published" datetime="2021-10-17">17 October 2021</time>
     </h2>
     <dl>
       <dt>This version:</dt><dd>
-              <a class="u-url" href="https://www.w3.org/TR/2021/REC-vc-data-model-20211006/">https://www.w3.org/TR/2021/REC-vc-data-model-20211006/</a>
+              <a class="u-url" href="https://www.w3.org/TR/2021/REC-vc-data-model-20211017/">https://www.w3.org/TR/2021/REC-vc-data-model-20211017/</a>
             </dd><dt>Latest published version:</dt><dd>
               <a href="https://www.w3.org/TR/vc-data-model/">https://www.w3.org/TR/vc-data-model/</a>
             </dd>
@@ -1082,9 +1082,9 @@ modifications to a few sentences in the specification.
                   This document is governed by the
                   <a id="w3c_process_revision" href="https://www.w3.org/2019/Process-20190301/">1 March 2019 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
                 </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#what-is-a-verifiable-credential"><bdi class="secno">1.1 </bdi>What is a Verifiable Credential?</a></li><li class="tocline"><a class="tocxref" href="#ecosystem-overview"><bdi class="secno">1.2 </bdi>Ecosystem Overview</a></li><li class="tocline"><a class="tocxref" href="#use-cases-and-requirements"><bdi class="secno">1.3 </bdi>Use Cases and Requirements</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.4 </bdi>Conformance</a></li></ol></li><li class="tocline"><a class="tocxref" href="#terminology"><bdi class="secno">2. </bdi>Terminology</a></li><li class="tocline"><a class="tocxref" href="#core-data-model"><bdi class="secno">3. </bdi>Core Data Model</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#claims"><bdi class="secno">3.1 </bdi>Claims</a></li><li class="tocline"><a class="tocxref" href="#credentials"><bdi class="secno">3.2 </bdi>Credentials</a></li><li class="tocline"><a class="tocxref" href="#presentations"><bdi class="secno">3.3 </bdi>Presentations</a></li><li class="tocline"><a class="tocxref" href="#concrete-lifecycle-example"><bdi class="secno">3.4 </bdi>Concrete Lifecycle Example</a></li></ol></li><li class="tocline"><a class="tocxref" href="#basic-concepts"><bdi class="secno">4. </bdi>Basic Concepts</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#contexts"><bdi class="secno">4.1 </bdi>Contexts</a></li><li class="tocline"><a class="tocxref" href="#identifiers"><bdi class="secno">4.2 </bdi>Identifiers</a></li><li class="tocline"><a class="tocxref" href="#types"><bdi class="secno">4.3 </bdi>Types</a></li><li class="tocline"><a class="tocxref" href="#credential-subject"><bdi class="secno">4.4 </bdi>Credential Subject</a></li><li class="tocline"><a class="tocxref" href="#issuer"><bdi class="secno">4.5 </bdi>Issuer</a></li><li class="tocline"><a class="tocxref" href="#issuance-date"><bdi class="secno">4.6 </bdi>Issuance Date</a></li><li class="tocline"><a class="tocxref" href="#proofs-signatures"><bdi class="secno">4.7 </bdi>Proofs (Signatures)</a></li><li class="tocline"><a class="tocxref" href="#expiration"><bdi class="secno">4.8 </bdi>Expiration</a></li><li class="tocline"><a class="tocxref" href="#status"><bdi class="secno">4.9 </bdi>Status</a></li><li class="tocline"><a class="tocxref" href="#presentations-0"><bdi class="secno">4.10 </bdi>Presentations</a></li></ol></li><li class="tocline"><a class="tocxref" href="#advanced-concepts"><bdi class="secno">5. </bdi>Advanced Concepts</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#lifecycle-details"><bdi class="secno">5.1 </bdi>Lifecycle Details</a></li><li class="tocline"><a class="tocxref" href="#trust-model"><bdi class="secno">5.2 </bdi>Trust Model</a></li><li class="tocline"><a class="tocxref" href="#extensibility"><bdi class="secno">5.3 </bdi>Extensibility</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#data-schemas"><bdi class="secno">5.4 </bdi>Data Schemas</a></li><li class="tocline"><a class="tocxref" href="#refreshing"><bdi class="secno">5.5 </bdi>Refreshing</a></li><li class="tocline"><a class="tocxref" href="#terms-of-use"><bdi class="secno">5.6 </bdi>Terms of Use</a></li><li class="tocline"><a class="tocxref" href="#evidence"><bdi class="secno">5.7 </bdi>Evidence</a></li><li class="tocline"><a class="tocxref" href="#zero-knowledge-proofs"><bdi class="secno">5.8 </bdi>Zero-Knowledge Proofs</a></li><li class="tocline"><a class="tocxref" href="#disputes"><bdi class="secno">5.9 </bdi>Disputes</a></li><li class="tocline"><a class="tocxref" href="#authorization"><bdi class="secno">5.10 </bdi>Authorization</a></li></ol></li><li class="tocline"><a class="tocxref" href="#syntaxes"><bdi class="secno">6. </bdi>Syntaxes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#json"><bdi class="secno">6.1 </bdi>JSON</a></li><li class="tocline"><a class="tocxref" href="#json-ld"><bdi class="secno">6.2 </bdi>JSON-LD</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#proof-formats"><bdi class="secno">6.3 </bdi>Proof Formats</a><ol class="toc"></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#privacy-considerations"><bdi class="secno">7. </bdi>Privacy Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#spectrum-of-privacy"><bdi class="secno">7.1 </bdi>Spectrum of Privacy</a></li><li class="tocline"><a class="tocxref" href="#personally-identifiable-information"><bdi class="secno">7.2 </bdi>Personally Identifiable Information</a></li><li class="tocline"><a class="tocxref" href="#identifier-based-correlation"><bdi class="secno">7.3 </bdi>Identifier-Based Correlation</a></li><li class="tocline"><a class="tocxref" href="#signature-based-correlation"><bdi class="secno">7.4 </bdi>Signature-Based Correlation</a></li><li class="tocline"><a class="tocxref" href="#long-lived-identifier-based-correlation"><bdi class="secno">7.5 </bdi>Long-Lived Identifier-Based Correlation</a></li><li class="tocline"><a class="tocxref" href="#device-fingerprinting"><bdi class="secno">7.6 </bdi>Device Fingerprinting</a></li><li class="tocline"><a class="tocxref" href="#favor-abstract-claims"><bdi class="secno">7.7 </bdi>Favor Abstract Claims</a></li><li class="tocline"><a class="tocxref" href="#the-principle-of-data-minimization"><bdi class="secno">7.8 </bdi>The Principle of Data Minimization</a></li><li class="tocline"><a class="tocxref" href="#bearer-credentials"><bdi class="secno">7.9 </bdi>Bearer Credentials</a></li><li class="tocline"><a class="tocxref" href="#validity-checks"><bdi class="secno">7.10 </bdi>Validity Checks</a></li><li class="tocline"><a class="tocxref" href="#storage-providers-and-data-mining"><bdi class="secno">7.11 </bdi>Storage Providers and Data Mining</a></li><li class="tocline"><a class="tocxref" href="#aggregation-of-credentials"><bdi class="secno">7.12 </bdi>Aggregation of Credentials</a></li><li class="tocline"><a class="tocxref" href="#usage-patterns"><bdi class="secno">7.13 </bdi>Usage Patterns</a></li><li class="tocline"><a class="tocxref" href="#sharing-information-with-the-wrong-party"><bdi class="secno">7.14 </bdi>Sharing Information with the Wrong Party</a></li><li class="tocline"><a class="tocxref" href="#frequency-of-claim-issuance"><bdi class="secno">7.15 </bdi>Frequency of Claim Issuance</a></li><li class="tocline"><a class="tocxref" href="#prefer-single-use-credentials"><bdi class="secno">7.16 </bdi>Prefer Single-Use Credentials</a></li><li class="tocline"><a class="tocxref" href="#private-browsing"><bdi class="secno">7.17 </bdi>Private Browsing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#security-considerations"><bdi class="secno">8. </bdi>Security Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cryptography-suites-and-libraries"><bdi class="secno">8.1 </bdi>Cryptography Suites and Libraries</a></li><li class="tocline"><a class="tocxref" href="#content-integrity-protection"><bdi class="secno">8.2 </bdi>Content Integrity Protection</a></li><li class="tocline"><a class="tocxref" href="#unsigned-claims"><bdi class="secno">8.3 </bdi>Unsigned Claims</a></li><li class="tocline"><a class="tocxref" href="#token-binding"><bdi class="secno">8.4 </bdi>Token Binding</a></li><li class="tocline"><a class="tocxref" href="#bundling-dependent-claims"><bdi class="secno">8.5 </bdi>Bundling Dependent Claims</a></li><li class="tocline"><a class="tocxref" href="#highly-dynamic-information"><bdi class="secno">8.6 </bdi>Highly Dynamic Information</a></li><li class="tocline"><a class="tocxref" href="#device-theft-and-impersonation"><bdi class="secno">8.7 </bdi>Device Theft and Impersonation</a></li></ol></li><li class="tocline"><a class="tocxref" href="#accessibility-considerations"><bdi class="secno">9. </bdi>Accessibility Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data-first-approaches"><bdi class="secno">9.1 </bdi>Data First Approaches</a></li></ol></li><li class="tocline"><a class="tocxref" href="#internationalization-considerations"><bdi class="secno">10. </bdi>Internationalization Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#language-and-base-direction"><bdi class="secno">10.1 </bdi>Language and Base Direction</a></li><li class="tocline"><a class="tocxref" href="#complex-language-markup"><bdi class="secno">10.2 </bdi>Complex Language Markup</a></li></ol></li><li class="tocline"><a class="tocxref" href="#validation"><bdi class="secno">A. </bdi>Validation</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#credential-subject-0"><bdi class="secno">A.1 </bdi>Credential Subject</a></li><li class="tocline"><a class="tocxref" href="#issuer-0"><bdi class="secno">A.2 </bdi>Issuer</a></li><li class="tocline"><a class="tocxref" href="#issuance-date-0"><bdi class="secno">A.3 </bdi>Issuance Date</a></li><li class="tocline"><a class="tocxref" href="#proofs-signatures-0"><bdi class="secno">A.4 </bdi>Proofs (Signatures)</a></li><li class="tocline"><a class="tocxref" href="#expiration-0"><bdi class="secno">A.5 </bdi>Expiration</a></li><li class="tocline"><a class="tocxref" href="#status-0"><bdi class="secno">A.6 </bdi>Status</a></li><li class="tocline"><a class="tocxref" href="#fitness-for-purpose"><bdi class="secno">A.7 </bdi>Fitness for Purpose</a></li></ol></li><li class="tocline"><a class="tocxref" href="#base-context"><bdi class="secno">B. </bdi>Base Context</a></li><li class="tocline"><a class="tocxref" href="#subject-holder-relationships"><bdi class="secno">C. </bdi>Subject-Holder Relationships</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#subject-is-the-holder"><bdi class="secno">C.1 </bdi>Subject is the Holder</a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#credential-uniquely-identifies-a-subject"><bdi class="secno">C.2 </bdi>Credential Uniquely Identifies a Subject</a></li><li class="tocline"><a class="tocxref" href="#subject-passes-the-verifiable-credential-to-a-holder"><bdi class="secno">C.3 </bdi>Subject Passes the Verifiable Credential to a Holder</a></li><li class="tocline"><a class="tocxref" href="#holder-acts-on-behalf-of-the-subject"><bdi class="secno">C.4 </bdi>Holder Acts on Behalf of the Subject</a></li><li class="tocline"><a class="tocxref" href="#subject-passes-a-verifiable-credential-to-someone-else"><bdi class="secno">C.5 </bdi>Subject Passes a Verifiable Credential to Someone Else</a></li><li class="tocline"><a class="tocxref" href="#issuer-authorizes-holder"><bdi class="secno">C.6 </bdi>Issuer Authorizes Holder</a></li><li class="tocline"><a class="tocxref" href="#holder-acts-on-behalf-of-the-verifier-or-has-no-relationship-with-the-subject-issuer-or-verifier"><bdi class="secno">C.7 </bdi>Holder Acts on Behalf of the Verifier, or has no Relationship with
-the Subject, Issuer, or Verifier</a></li></ol></li><li class="tocline"><a class="tocxref" href="#iana-considerations"><bdi class="secno">D. </bdi>IANA Considerations</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">E. </bdi>Acknowledgements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">F. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">F.1 </bdi>
+the Subject, Issuer, or Verifier</a></li></ol></li><li class="tocline"><a class="tocxref" href="#iana-considerations"><bdi class="secno">D. </bdi>IANA Considerations</a></li><li class="tocline"><a class="tocxref" href="#revision-history"><bdi class="secno">E. </bdi>Revision History</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">F. </bdi>Acknowledgements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">G. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">G.1 </bdi>
         Normative references
-      </a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">F.2 </bdi>
+      </a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">G.2 </bdi>
         Informative references
       </a></li></ol></li></ol></nav>
 
@@ -7117,8 +7117,42 @@ Extensions of Verifiable Credentials Data Model 1.0</a>
 
   </section>
 
+  <section id="revision-history">
+    <h2 id="e-revision-history"><bdi class="secno">E. </bdi>Revision History<a class="self-link" aria-label="§" href="#revision-history"></a></h2>
+
+    <p>
+This section contains the substantive changes that have been made since the
+publication of V1.0 of this specification as a <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation.
+    </p>
+
+    <p>
+Changes since the <a href="https://www.w3.org/TR/2019/REC-vc-data-model-20191119/"> Recommendation
+</a> include: 
+
+      </p><ul>
+        <li>
+Update previous normative references that pointed to RFC3339 for datetime
+details to now normatively reference the datetime details described in
+XMLSCHEMA11-2 which more accurately reflects the usage in examples and libraries.
+        </li>
+
+        <li>
+Change from requiring URLs to URIs in the <code>id</code> property of the
+<code>credentialStatus</code> and <code>refreshService</code> sections of the
+data model.
+        </li>
+
+        <li>
+Modify normative statements of the zero-knowledge proofs section to allow
+normative compliance of new zero-knowledge proof schems that have been created
+since the V1.0 Recommendation specification was published.
+        </li>
+      </ul>
+    <p></p>
+  </section>
+
   <section class="appendix informative" id="acknowledgements">
-    <h2 id="e-acknowledgements"><bdi class="secno">E. </bdi>Acknowledgements<a class="self-link" aria-label="§" href="#acknowledgements"></a></h2><p><em>This section is non-normative.</em></p>
+    <h2 id="f-acknowledgements"><bdi class="secno">F. </bdi>Acknowledgements<a class="self-link" aria-label="§" href="#acknowledgements"></a></h2><p><em>This section is non-normative.</em></p>
 
     <p>
 The Working Group would like to thank the following individuals for reviewing
@@ -7186,14 +7220,14 @@ Benjamin Young, Kaliya Young, Dmitri Zagidulin, and Brent Zundel.
 	// ]]>
 </script>
 
-<section id="references" class="appendix"><h2 id="f-references"><bdi class="secno">F. </bdi>References<a class="self-link" aria-label="§" href="#references"></a></h2><section id="normative-references">
-      <h3 id="f-1-normative-references"><bdi class="secno">F.1 </bdi>
+<section id="references" class="appendix"><h2 id="g-references"><bdi class="secno">G. </bdi>References<a class="self-link" aria-label="§" href="#references"></a></h2><section id="normative-references">
+      <h3 id="g-1-normative-references"><bdi class="secno">G.1 </bdi>
         Normative references
       <a class="self-link" aria-label="§" href="#normative-references"></a></h3>
     <dl class="bibliography">
       <dt id="bib-json-ld">[JSON-LD]</dt><dd><a href="https://www.w3.org/TR/json-ld11/"><cite>JSON-LD 1.1: A JSON-based Serialization for Linked Data</cite></a>. Gregg Kellogg; Manu Sporny; Dave Longley; Markus Lanthaler; Pierre-Antoine Champin; Niklas Lindström.  W3C JSON-LD 1.1 Working Group. W3C Working Draft. URL: <a href="https://www.w3.org/TR/json-ld11/">https://www.w3.org/TR/json-ld11/</a></dd><dt id="bib-rfc2119">[RFC2119]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a></dd><dt id="bib-rfc7515">[RFC7515]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7515"><cite>JSON Web Signature (JWS)</cite></a>. M. Jones; J. Bradley; N. Sakimura.  IETF. May 2015. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7515">https://www.rfc-editor.org/rfc/rfc7515</a></dd><dt id="bib-rfc7519">[RFC7519]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7519"><cite>JSON Web Token (JWT)</cite></a>. M. Jones; J. Bradley; N. Sakimura.  IETF. May 2015. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7519">https://www.rfc-editor.org/rfc/rfc7519</a></dd><dt id="bib-rfc8174">[RFC8174]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8174"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a></dd><dt id="bib-rfc8259">[RFC8259]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8259"><cite>The JavaScript Object Notation (JSON) Data Interchange Format</cite></a>. T. Bray, Ed..  IETF. December 2017. Internet Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc8259">https://www.rfc-editor.org/rfc/rfc8259</a></dd><dt id="bib-xmlschema11-2">[XMLSCHEMA11-2]</dt><dd><a href="https://www.w3.org/TR/xmlschema11-2/"><cite>W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes</cite></a>. David Peterson; Sandy Gao; Ashok Malhotra; Michael Sperberg-McQueen; Henry Thompson; Paul V. Biron et al.  W3C. 5 April 2012. W3C Recommendation. URL: <a href="https://www.w3.org/TR/xmlschema11-2/">https://www.w3.org/TR/xmlschema11-2/</a></dd>
     </dl></section><section id="informative-references">
-      <h3 id="f-2-informative-references"><bdi class="secno">F.2 </bdi>
+      <h3 id="g-2-informative-references"><bdi class="secno">G.2 </bdi>
         Informative references
       <a class="self-link" aria-label="§" href="#informative-references"></a></h3>
     <dl class="bibliography">
