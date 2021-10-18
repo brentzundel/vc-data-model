@@ -2,7 +2,7 @@
     <title>Verifiable Credentials Data Model 1.1</title>
     
     
-    
+    <style id="respec-mainstyle">@keyframes pop{0%{transform:scale(1,1)}25%{transform:scale(1.25,1.25);opacity:.75}100%{transform:scale(1,1)}}.hljs{background:0 0!important}a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}dfn{font-weight:700}a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}a.bibref{text-decoration:none}.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}@supports not (text-decoration:red wavy underline){.respec-offending-element:not(pre){display:inline-block}.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}}#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}cite .bibref{font-style:normal}code{color:#c63501}th code{color:inherit}a[href].orcid{padding-left:4px;padding-right:4px}a[href].orcid>svg{margin-bottom:-2px}.toc a,.tof a{text-decoration:none}a .figno,a .secno{color:#000}ol.tof,ul.tof{list-style:none outside none}.caption{margin-top:.5em;font-style:italic}table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}.simple th a{color:#fff;padding:3px 5px;text-align:left}.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}.simple td{padding:3px 10px;border-top:1px solid #ddd}.simple tr:nth-child(even){background:#f0f6ff}.section dd>p:first-child{margin-top:0}.section dd>p:last-child{margin-bottom:0}.section dd{margin-bottom:1em}.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}#issue-summary>ul,.respec-dfn-list{column-count:2}#issue-summary li,.respec-dfn-list li{list-style:none}details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}details.respec-tests-details>*{padding-right:2em}details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}details.respec-tests-details>ul{width:100%;margin-top:-.3em}details.respec-tests-details>li{padding-left:1em}a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}h2,h3,h4,h5,h6{position:relative}aside.example .marker>a.self-link{color:inherit}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}@media (max-width:767px){dd{margin-left:0}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}}@media print{.removeOnSave{display:none}}</style>
     
     
     <style>
@@ -31,7 +31,7 @@ pre .comment {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
     </style>
-  <style id="respec-mainstyle">@keyframes pop{0%{transform:scale(1,1)}25%{transform:scale(1.25,1.25);opacity:.75}100%{transform:scale(1,1)}}.hljs{background:0 0!important}a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}dfn{font-weight:700}a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}a.bibref{text-decoration:none}.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}@supports not (text-decoration:red wavy underline){.respec-offending-element:not(pre){display:inline-block}.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}}#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}cite .bibref{font-style:normal}code{color:#c63501}th code{color:inherit}a[href].orcid{padding-left:4px;padding-right:4px}a[href].orcid>svg{margin-bottom:-2px}.toc a,.tof a{text-decoration:none}a .figno,a .secno{color:#000}ol.tof,ul.tof{list-style:none outside none}.caption{margin-top:.5em;font-style:italic}table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}.simple th a{color:#fff;padding:3px 5px;text-align:left}.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}.simple td{padding:3px 10px;border-top:1px solid #ddd}.simple tr:nth-child(even){background:#f0f6ff}.section dd>p:first-child{margin-top:0}.section dd>p:last-child{margin-bottom:0}.section dd{margin-bottom:1em}.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}#issue-summary>ul,.respec-dfn-list{column-count:2}#issue-summary li,.respec-dfn-list li{list-style:none}details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}details.respec-tests-details>*{padding-right:2em}details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}details.respec-tests-details>ul{width:100%;margin-top:-.3em}details.respec-tests-details>li{padding-left:1em}a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}h2,h3,h4,h5,h6{position:relative}aside.example .marker>a.self-link{color:inherit}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}@media (max-width:767px){dd{margin-left:0}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}}@media print{.removeOnSave{display:none}}</style><meta name="description" content="Credentials are a part of our daily lives; driver's licenses are used to
+  <meta name="description" content="Credentials are a part of our daily lives; driver's licenses are used to
 assert that we are capable of operating a motor vehicle, university degrees
 can be used to assert our level of education, and government-issued passports
 enable us to travel between countries. This specification provides a mechanism
@@ -66,7 +66,7 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
   "name": "Verifiable Credentials Data Model 1.1",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-  "datePublished": "2021-10-17",
+  "datePublished": "2021-10-18",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -319,10 +319,10 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
       }
     },
     {
-      "id": "https://w3c-ccg.github.io/ld-proofs/",
+      "id": "https://w3c-dvcg.github.io/ld-signatures/",
       "type": "TechArticle",
-      "name": "Linked Data Proofs",
-      "url": "https://w3c-ccg.github.io/ld-proofs/",
+      "name": "Linked Data Signatures",
+      "url": "https://w3c-dvcg.github.io/ld-signatures/",
       "creator": [
         {
           "name": "Manu Sporny"
@@ -332,14 +332,14 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
         }
       ],
       "publisher": {
-        "name": "Credentials Community Group"
+        "name": "Digital Verification Community Group"
       }
     },
     {
-      "id": "https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols",
+      "id": "http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf",
       "type": "TechArticle",
       "name": "A Signature Scheme with Efficient Protocols",
-      "url": "https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols",
+      "url": "http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf",
       "creator": [
         {
           "name": "Jan Camenisch"
@@ -373,23 +373,37 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
       }
     },
     {
-      "id": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "id": "https://w3c-dvcg.github.io/ld-proofs/",
       "type": "TechArticle",
-      "name": "Linked Data Cryptographic Suite Registry",
-      "url": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "name": "Linked Data Proofs",
+      "url": "https://w3c-dvcg.github.io/ld-proofs/",
       "creator": [
         {
           "name": "Manu Sporny"
         },
         {
-          "name": "Drummond Reed"
-        },
-        {
-          "name": "Orie Steele"
+          "name": "Dave Longley"
         }
       ],
       "publisher": {
-        "name": "Credentials Community Group"
+        "name": "Digital Verification Community Group"
+      }
+    },
+    {
+      "id": "https://w3c-dvcg.github.io/lds-rsa2018/",
+      "type": "TechArticle",
+      "name": "The 2018 RSA Linked Data Signature Suite",
+      "url": "https://w3c-dvcg.github.io/lds-rsa2018/",
+      "creator": [
+        {
+          "name": "Manu Sporny"
+        },
+        {
+          "name": "Dave Longley"
+        }
+      ],
+      "publisher": {
+        "name": "Digital Verification Community Group"
       }
     },
     {
@@ -466,6 +480,26 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
       ],
       "publisher": {
         "name": "Internet Engineering Task Force (IETF)"
+      }
+    },
+    {
+      "id": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "type": "TechArticle",
+      "name": "Linked Data Cryptographic Suite Registry",
+      "url": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "creator": [
+        {
+          "name": "Manu Sporny"
+        },
+        {
+          "name": "Drummond Reed"
+        },
+        {
+          "name": "Orie Steele"
+        }
+      ],
+      "publisher": {
+        "name": "Credentials Community Group"
       }
     },
     {
@@ -624,8 +658,6 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
   "implementationReportURI": "https://w3c.github.io/vc-test-suite/implementations/",
   "previousMaturity": "REC",
   "previousPublishDate": "2019-11-19",
-  "previousURI": "https://www.w3.org/TR/2019/REC-vc-data-model-20191119/",
-  "previousDiffURI": "https://www.w3.org/TR/2019/REC-vc-data-model-20190903/",
   "errata": "https://w3c.github.io/vc-data-model/errata.html",
   "localBiblio": {
     "REST": {
@@ -674,14 +706,25 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
     },
     "LD-PROOFS": {
       "title": "Linked Data Proofs",
-      "href": "https://w3c-ccg.github.io/ld-proofs/",
+      "href": "https://w3c-dvcg.github.io/ld-proofs/",
       "authors": [
         "Manu Sporny",
         "Dave Longley"
       ],
       "status": "CG-DRAFT",
-      "publisher": "Credentials Community Group",
+      "publisher": "Digital Verification Community Group",
       "id": "ld-proofs"
+    },
+    "LD-SIGNATURES": {
+      "title": "Linked Data Signatures",
+      "href": "https://w3c-dvcg.github.io/ld-signatures/",
+      "authors": [
+        "Manu Sporny",
+        "Dave Longley"
+      ],
+      "status": "CG-DRAFT",
+      "publisher": "Digital Verification Community Group",
+      "id": "ld-signatures"
     },
     "LDP-REGISTRY": {
       "title": "Linked Data Cryptographic Suite Registry",
@@ -695,9 +738,20 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
       "publisher": "Credentials Community Group",
       "id": "ldp-registry"
     },
+    "LDS-RSA2018": {
+      "title": "The 2018 RSA Linked Data Signature Suite",
+      "href": "https://w3c-dvcg.github.io/lds-rsa2018/",
+      "authors": [
+        "Manu Sporny",
+        "Dave Longley"
+      ],
+      "status": "CG-DRAFT",
+      "publisher": "Digital Verification Community Group",
+      "id": "lds-rsa2018"
+    },
     "CL-SIGNATURES": {
       "title": "A Signature Scheme with Efficient Protocols",
-      "href": "https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols",
+      "href": "http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf",
       "authors": [
         "Jan Camenisch",
         "Anna Lysyanskaya"
@@ -871,19 +925,19 @@ cryptographically secure, privacy respecting, and machine-verifiable."><link rel
   "wgPatentURI": "https://www.w3.org/2004/01/pp-impl/98922/status",
   "maxTocLevel": 2,
   "inlineCSS": true,
-  "publishISODate": "2021-10-17T00:00:00.000Z",
-  "generatedSubtitle": "Recommendation 17 October 2021"
+  "publishISODate": "2021-10-18T00:00:00.000Z",
+  "generatedSubtitle": "Recommendation 18 October 2021"
 }</script><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-REC"></head>
   <body class="h-entry"><div class="head">
     <a class="logo" href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" width="72" height="48"></a> <h1 id="title" class="title">Verifiable Credentials Data Model 1.1</h1>
     <h2 id="subtitle" class="subtitle">Expressing verifiable information on the Web</h2>
     <h2>
       W3C Recommendation
-      <time class="dt-published" datetime="2021-10-17">17 October 2021</time>
+      <time class="dt-published" datetime="2021-10-18">18 October 2021</time>
     </h2>
     <dl>
       <dt>This version:</dt><dd>
-              <a class="u-url" href="https://www.w3.org/TR/2021/REC-vc-data-model-20211017/">https://www.w3.org/TR/2021/REC-vc-data-model-20211017/</a>
+              <a class="u-url" href="https://www.w3.org/TR/2021/REC-vc-data-model-20211018/">https://www.w3.org/TR/2021/REC-vc-data-model-20211018/</a>
             </dd><dt>Latest published version:</dt><dd>
               <a href="https://www.w3.org/TR/vc-data-model/">https://www.w3.org/TR/vc-data-model/</a>
             </dd>
@@ -1322,20 +1376,13 @@ desirable ecosystem characteristics were identified for this specification:
 
         <ul>
           <li>
-<a href="#dfn-credential" class="internalDFN" data-link-type="dfn">Credentials</a> represent statements made by an <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">issuer</a>.
-          </li>
-          <li>
 <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">Verifiable credentials</a> represent statements made by an <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">issuer</a> in
 a tamper-evident and privacy-respecting manner.
           </li>
           <li>
-<a href="#dfn-holders" class="internalDFN" data-link-type="dfn">Holders</a> assemble collections of <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credentials</a> and/or
-<a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a> from different <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">issuers</a> into a single
-artifact, a <a href="#dfn-presentations" class="internalDFN" data-link-type="dfn">presentation</a>.
-          </li>
-          <li>
-Holders transform <a href="#dfn-presentations" class="internalDFN" data-link-type="dfn">presentations</a> into <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentations</a>
-to render them tamper-evident. 
+<a href="#dfn-holders" class="internalDFN" data-link-type="dfn">Holders</a> assemble collections of <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a> from
+different <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">issuers</a> into a single artifact, a
+<a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a>.
           </li>
           <li>
 <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">Issuers</a> can issue <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a> about any <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subject</a>.
@@ -1405,17 +1452,6 @@ greater than, less than, equal to, is in set, and so on.
           </li>
           <li>
 <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">Issuers</a> can issue revocable <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a>.
-          </li>
-          <li>
-The processes of cryptographically protecting <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credentials</a> and
-<a href="#dfn-presentations" class="internalDFN" data-link-type="dfn">presentations</a>, and verifying <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a> and
-<a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentations</a>, have to be deterministic, bi-directional, and
-lossless. Any verification of a <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a> or
-<a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a> has to be transformable to the generic data model
-defined in this document in a deterministic process, such that the resulting
-<a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credential</a> or <a href="#dfn-presentations" class="internalDFN" data-link-type="dfn">presentation</a> is semantically and syntactically
-equivalent to the original construct, so that it can be processed in an
-interoperable fashion.
           </li>
           <li>
 <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">Verifiable credentials</a> and <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentations</a> have to be
@@ -1501,7 +1537,7 @@ At the time of publication, Working Group members had implemented
 JSON Web Tokens [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7519" title="JSON Web Token (JWT)">RFC7519</a></cite>] secured using JSON Web Signatures [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7515" title="JSON Web Signature (JWS)">RFC7515</a></cite>]
           </li>
           <li>
-Linked Data Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-proofs" title="Linked Data Proofs">LD-PROOFS</a></cite>]
+Linked Data Signatures [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-signatures" title="Linked Data Signatures">LD-SIGNATURES</a></cite>]
           </li>
           <li>
 Camenisch-Lysyanskaya Zero-Knowledge Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-cl-signatures" title="A Signature Scheme with Efficient Protocols">CL-SIGNATURES</a></cite>].
@@ -1835,7 +1871,7 @@ usually a digital signature.
 	       Proof Graph on the bottom.  The Credental Graph has
 	       Credential 123 with 4 properties: 'type' of value
 	       AlumniCredential, 'issuer' of Example University,
-	       'issuanceDate' of 2010-01-01T19:23:24Z, and
+	       'issuanceDate' of 2010-01-01T19:73:24Z, and
 	       credentialSubject of Pat, who has an alumniOf property
 	       with value of Example University.  The Proof Graph has
 	       Signature 456 with 5 properties: 'type' of
@@ -1904,21 +1940,21 @@ Basic components of a verifiable presentation.
 <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a>, but abstracts the details about how
 <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a> are organized into information <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graphs</a>,
 which are then organized into <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentations</a>.
-        </p>
-        <p>
 <a href="#info-graph-vp" class="fig-ref" title="Information graphs associated with a basic verifiable presentation.">Figure <bdi class="figno">8</bdi></a> below shows a more complete depiction of a
 <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a>, which is normally composed of at least four
-information <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graphs</a>. The first of these information <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graphs</a>, the
-Presentation <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">Graph</a>, expresses the <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a>
-itself, which contains presentation metadata. The
-<code>verifiableCredential</code> property in the Presentation <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">Graph</a>
-refers to one or more <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a>, each being one of the
-second information <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graphs</a>, i.e., a self-contained Credential
-<a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">Graph</a>), which in turn contains credential metadata and claims. The
-third information <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graph</a>, the Credential Proof <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">Graph</a>, expresses
-the credential graph proof, which is usually a digital signature. The fourth
-information <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graph</a>, the Presentation Proof <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">Graph</a>, expresses the
-presentation graph proof, which is usually a digital signature.
+information <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graphs</a>. The first <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graph</a> expresses the
+<a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a> itself, which contains
+<span class="color-text" style="color:#b4a7d6;">presentation metadata</span>.
+The <code>verifiableCredential</code> property in the <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graph</a> refers to
+one or more <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a> (each a self-contained <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graph</a>),
+which in turn contains
+<span class="color-text" style="color:#d5a6bd;">credential metadata</span> and
+<span class="color-text" style="color:#ffe599;">claims</span>.
+The third <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graph</a> expresses the
+<span class="color-text" style="color:#b6d7a8;">credential graph proof</span>,
+which is usually a digital signature. The fourth <a href="#dfn-graphs" class="internalDFN" data-link-type="dfn">graph</a> expresses the
+<span class="color-text" style="color:#a4c2f4;">presentation graph proof</span>,
+which is usually a digital signature.
         </p>
 
         <figure id="info-graph-vp">
@@ -2003,7 +2039,7 @@ discount from a university. In the example below, Pat receives an alumni
   <span class="comment">// the entity that issued the credential</span>
   "issuer": "https://example.edu/issuers/565049",
   <span class="comment">// when the credential was issued</span>
-  "issuanceDate": "2010-01-01T19:23:24Z",
+  "issuanceDate": "2010-01-01T19:73:24Z",
   <span class="comment">// claims about the subjects of the credential</span>
   "credentialSubject": {
     <span class="comment">// identifier for the only subject of the credential</span>
@@ -2030,7 +2066,7 @@ discount from a university. In the example below, Pat receives an alumni
     <span class="comment">// purpose of this proof</span>
     "proofPurpose": "assertionMethod",
     <span class="comment">// the identifier of the public key that can verify the signature</span>
-    "verificationMethod": "https://example.edu/issuers/565049/keys/1",
+    "verificationMethod": "https://example.edu/issuers/keys/1",
     <span class="comment">// the digital signature value</span>
     "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5X
       sITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUc
@@ -2070,7 +2106,7 @@ the <a href="#dfn-verifier" class="internalDFN" data-link-type="dfn">verifier</a
     "id": "http://example.edu/credentials/1872",
     "type": ["VerifiableCredential", "AlumniCredential"],
     "issuer": "https://example.edu/issuers/565049",
-    "issuanceDate": "2010-01-01T19:23:24Z",
+    "issuanceDate": "2010-01-01T19:73:24Z",
     "credentialSubject": {
       "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
       "alumniOf": {
@@ -2088,7 +2124,7 @@ the <a href="#dfn-verifier" class="internalDFN" data-link-type="dfn">verifier</a
       "type": "RsaSignature2018",
       "created": "2017-06-18T21:19:10Z",
       "proofPurpose": "assertionMethod",
-      "verificationMethod": "https://example.edu/issuers/565049/keys/1",
+      "verificationMethod": "https://example.edu/issuers/keys/1",
       "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5X
         sITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUc
         X16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtj
@@ -2115,11 +2151,13 @@ the <a href="#dfn-verifier" class="internalDFN" data-link-type="dfn">verifier</a
 
         <div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note-4" aria-level="4"><span>Note</span></div><p class="">
 Implementers that are interested in understanding more about the
-<code>proof</code> mechanism used above can learn more in Section <a href="#proofs-signatures" class="sec-ref">§&nbsp;<bdi class="secno">4.7 </bdi>Proofs (Signatures)</a> and by reading the following specifications:
-Linked Data Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-proofs" title="Linked Data Proofs">LD-PROOFS</a></cite>], Linked Data Cryptographic Suites
-Registry[<cite><a class="bibref" data-link-type="biblio" href="#bib-ldp-registry" title="Linked Data Cryptographic Suite Registry">LDP-REGISTRY</a></cite>], and JSON Web Signature (JWS) Unencoded Payload Option
-[<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7797" title="JSON Web Signature (JWS) Unencoded Payload Option">RFC7797</a></cite>]. A list of proof mechanisms is available in the Verifiable
-Credentials Extension Registry [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-extension-registry" title="Verifiable Credentials Extension Registry">VC-EXTENSION-REGISTRY</a></cite>].
+<code>proof</code> mechanism used above can learn more in
+Section <a href="#proofs-signatures" class="sec-ref">§&nbsp;<bdi class="secno">4.7 </bdi>Proofs (Signatures)</a> and by reading the
+following specifications: Linked Data Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-proofs" title="Linked Data Proofs">LD-PROOFS</a></cite>], Linked Data
+Signatures [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-signatures" title="Linked Data Signatures">LD-SIGNATURES</a></cite>], 2018 RSA Signature Suite [<cite><a class="bibref" data-link-type="biblio" href="#bib-lds-rsa2018" title="The 2018 RSA Linked Data Signature Suite">LDS-RSA2018</a></cite>], and
+JSON Web Signature (JWS) Unencoded Payload Option [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7797" title="JSON Web Signature (JWS) Unencoded Payload Option">RFC7797</a></cite>]. A list
+of proof mechanisms is available in the Verifiable Credentials
+Extension Registry [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-extension-registry" title="Verifiable Credentials Extension Registry">VC-EXTENSION-REGISTRY</a></cite>].
         </p></div>
       </section>
     </section>
@@ -2201,8 +2239,6 @@ processors that support JSON-LD can process the <code>@context</code>
   ]</span>,
   "id": "http://example.edu/credentials/58473",
   "type": ["VerifiableCredential", "AlumniCredential"],
-  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "alumniOf": {
@@ -2308,8 +2344,6 @@ about the <code>id</code>.
   ],
   <span class="highlight">"id": "http://example.edu/credentials/3732"</span>,
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
-  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
   "credentialSubject": {
     <span class="highlight">"id": "did:example:ebfeb1f712ebc6f1c276e12ec21"</span>,
     "degree": {
@@ -2386,8 +2420,6 @@ in a document containing machine-readable information about the
   ],
   "id": "http://example.edu/credentials/3732",
   <span class="highlight">"type": ["VerifiableCredential", "UniversityDegreeCredential"]</span>,
-  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
@@ -2604,8 +2636,6 @@ a set of objects that contain one or more properties that are each related to a
   ],
   "id": "http://example.edu/credentials/3732",
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
-  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
   <span class="highlight">"credentialSubject"</span>: {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
@@ -2634,8 +2664,6 @@ who are spouses. Note the use of array notation to associate multiple
   ],
   "id": "http://example.edu/credentials/3732",
   "type": ["VerifiableCredential", "RelationshipCredential"],
-  "issuer": "https://example.com/issuer/123",
-  "issuanceDate": "2010-01-01T00:00:00Z",
   "credentialSubject": <span class="highlight">[{
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "name": "Jayden Doe",
@@ -2849,7 +2877,7 @@ the signing date. The example below uses RSA digital signatures.
   "id": "http://example.gov/credentials/3732",
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu",
-  "issuanceDate": "2010-01-01T19:23:24Z",
+  "issuanceDate": "2010-01-01T19:73:24Z",
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
@@ -2878,10 +2906,11 @@ As discussed in Section <a href="#conformance" class="sec-ref">§&nbsp;<bdi clas
 proof mechanisms, and this specification does not standardize nor recommend any
 single proof mechanism for use with <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a>. For more
 information about the <code>proof</code> mechanism, see the following
-specifications: Linked Data Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-proofs" title="Linked Data Proofs">LD-PROOFS</a></cite>], Linked Data Cryptographic
-Suites Registries [<cite><a class="bibref" data-link-type="biblio" href="#bib-ldp-registry" title="Linked Data Cryptographic Suite Registry">LDP-REGISTRY</a></cite>], and JSON Web Signature (JWS) Unencoded
-Payload Option [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7797" title="JSON Web Signature (JWS) Unencoded Payload Option">RFC7797</a></cite>]. A list of proof mechanisms is available in the
-Verifiable Credentials Extension Registry [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-extension-registry" title="Verifiable Credentials Extension Registry">VC-EXTENSION-REGISTRY</a></cite>].
+specifications: Linked Data Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-proofs" title="Linked Data Proofs">LD-PROOFS</a></cite>], Linked Data Signatures
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-signatures" title="Linked Data Signatures">LD-SIGNATURES</a></cite>], 2018 RSA Signature Suite [<cite><a class="bibref" data-link-type="biblio" href="#bib-lds-rsa2018" title="The 2018 RSA Linked Data Signature Suite">LDS-RSA2018</a></cite>], and JSON Web
+Signature (JWS) Unencoded Payload Option [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7797" title="JSON Web Signature (JWS) Unencoded Payload Option">RFC7797</a></cite>]. A list of proof mechanisms
+is available in the Verifiable Credentials Extension Registry
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-extension-registry" title="Verifiable Credentials Extension Registry">VC-EXTENSION-REGISTRY</a></cite>].
         </p></div>
 
       </section>
@@ -2950,8 +2979,7 @@ This specification defines the following <code>credentialStatus</code>
         <dl>
           <dt><var>credentialStatus</var></dt>
           <dd>
-If present, the value of the <code>credentialStatus</code> <a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> <em class="rfc2119" title="MUST">MUST</em>
-include the following:
+The value of the <code>credentialStatus</code> <a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> <em class="rfc2119" title="MUST">MUST</em> include the:
 
             <ul>
               <li>
@@ -3129,11 +3157,11 @@ has the flexibility to use the <a href="#dfn-claims" class="internalDFN" data-li
 the desired <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a>.
         </p>
 
-        <figure id="fig-a-basic-claim-expressing-that-pat-s-date-of-birth-is-january-1-2010-date-encoding-would-be-determined-by-the-schema">
+        <figure id="fig-a-basic-claim-expressing-that-pat-s-date-of-birth-is-2010-01-01t19-23-24z-date-encoding-would-be-determined-by-the-schema">
           <img style="margin: auto; display: block; width: 50%;" src="diagrams/claim-example-2.svg" alt="Pat has a property
-            dateOfBirth whose value is 2010-01-01">
+            dateOfBirth whose value is 2010-01-01T19:73:24Z">
           <figcaption style="text-align: center;">Figure <bdi class="figno">9</bdi> <span class="fig-title">
-A basic claim expressing that Pat's date of birth is January 1, 2010. Date
+A basic claim expressing that Pat's date of birth is 2010-01-01T19:23:24Z. Date
 encoding would be determined by the schema.
           </span></figcaption>
         </figure>
@@ -3371,9 +3399,9 @@ data model, without the use of a centralized system for doing so, through the
 use of [<cite><a class="bibref" data-link-type="biblio" href="#bib-linked-data" title="Linked Data Design Issues">LINKED-DATA</a></cite>].
           </li>
           <li>
-Support multiple types of cryptographic proof formats through the use of
-Linked Data Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-proofs" title="Linked Data Proofs">LD-PROOFS</a></cite>] and a variety of signature suites listed
-in the Linked Data Cryptographic Suites Registry [<cite><a class="bibref" data-link-type="biblio" href="#bib-ldp-registry" title="Linked Data Cryptographic Suite Registry">LDP-REGISTRY</a></cite>]
+Support multiple types of cryptographic proof formats through the use of Linked
+Data Proofs [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-proofs" title="Linked Data Proofs">LD-PROOFS</a></cite>], Linked Data Signatures [<cite><a class="bibref" data-link-type="biblio" href="#bib-ld-signatures" title="Linked Data Signatures">LD-SIGNATURES</a></cite>], and a
+variety of signature suites.
           </li>
           <li>
 Provide all of the extensibility mechanisms outlined above in a data format that
@@ -3885,23 +3913,10 @@ in an archive.
   </div> <pre class="nohighlight">{
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://www.w3.org/2018/credentials/examples/v1",
-    {
-        "@protected": true,
-        "VerifiablePresentationTermsOfUseExtension": {
-          "@id": "https://www.w3.org/2018/credentials/examples#VerifiablePresentationExtension",
-          "@context": {
-            "@protected": true,
-            "termsOfUse": {
-              "@id": "https://www.w3.org/2018/credentials#termsOfUse",
-              "@type": "@id"
-            }
-          }
-        }
-    }
+    "https://www.w3.org/2018/credentials/examples/v1"
   ],
   "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
-  "type": ["VerifiablePresentation", "VerifiablePresentationTermsOfUseExtension"],
+  "type": ["VerifiablePresentation"],
   "verifiableCredential": [{
     "@context": [
       "https://www.w3.org/2018/credentials/v1",
@@ -3930,21 +3945,10 @@ in an archive.
       "target": "http://example.edu/credentials/3732",
       "action": ["3rdPartyCorrelation"]
     }]
-  }]</span>,
+  }</span>,
   "proof": [ ... ]
 }</pre>
       </div>
-
-        <div class="note" role="note" id="issue-container-generatedID-23"><div role="heading" class="note-title marker" id="h-note-23" aria-level="4"><span>Note</span></div><p class="">
-Warning: The <code>termsOfUse</code> property is improperly defined within the
-<code>VerifiablePresentation</code> scoped context. This is a bug with the
-version 1 context and will be fixed in the version 2 context. In the meantime,
-implementors who wish to use this feature will be required to extend the context
-of their <a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a> with an additional term that defines the
-<code>termsOfUse</code> property, which can then be used alongside the
-<a href="#dfn-verifiable-presentations" class="internalDFN" data-link-type="dfn">verifiable presentation</a> type property, in order for the term to be
-semantically recognized in a JSON-LD processor.
-        </p></div>
 
         <p>
 In the example above, the <a href="#dfn-holders" class="internalDFN" data-link-type="dfn">holder</a> (the <code>assigner</code>), who is
@@ -3953,7 +3957,7 @@ also the <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subjec
 using the information provided to correlate the <a href="#dfn-holders" class="internalDFN" data-link-type="dfn">holder</a> or <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subject</a>
 using a third-party service. If the <a href="#dfn-verifier" class="internalDFN" data-link-type="dfn">verifier</a> were to use a third-party
 service for correlation, they would violate the terms under which the
-<a href="#dfn-holders" class="internalDFN" data-link-type="dfn">holder</a> created the <a href="#dfn-presentations" class="internalDFN" data-link-type="dfn">presentation</a>.
+holder created the <a href="#dfn-presentations" class="internalDFN" data-link-type="dfn">presentation</a>.
         </p>
 
         <p>
@@ -4007,7 +4011,7 @@ definition.
           </dd>
         </dl>
 
-        <div class="note" role="note" id="issue-container-generatedID-24"><div role="heading" class="note-title marker" id="h-note-24" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-23"><div role="heading" class="note-title marker" id="h-note-23" aria-level="4"><span>Note</span></div><p class="">
 For information about how attachments and references to <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credentials</a> and
 non-credential data might be supported by the specification, see the
 Verifiable Credentials Implementation Guidelines [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-imp-guide" title="Verifiable Credentials Implementation Guidelines 1.0">VC-IMP-GUIDE</a></cite>] document.
@@ -4038,23 +4042,20 @@ Verifiable Credentials Implementation Guidelines [<cite><a class="bibref" data-l
     "verifier": "https://example.edu/issuers/14",
     "evidenceDocument": "DriversLicense",
     "subjectPresence": "Physical",
-    "documentPresence": "Physical",
-    "licenseNumber": "123AB4567"
+    "documentPresence": "Physical"
+  },{
+    "id": "https://example.edu/evidence/f2aeec97-fc0d-42bf-8ca7-0548192dxyzab",
+    "type": ["SupportingActivity"],
+    "verifier": "https://example.edu/issuers/14",
+    "evidenceDocument": "Fluid Dynamics Focus",
+    "subjectPresence": "Digital",
+    "documentPresence": "Digital"
   }]</span>,
   "proof": { <span class="comment">...</span> }
 }</pre>
       </div>
 
-        <div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-25" aria-level="4"><span>Note</span></div><p class="">
-In this <code>evidence</code> example, the <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">issuer</a> is asserting that they
-physically matched the <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subject</a> of the <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credential</a> to a physical
-copy of a driver's license with the stated license number. This driver's license
-was used in the issuance process to verify that "Example University" verified
-the subject before issuance of the credential and how they did so (physical
-verification).
-        </p></div>
-
-        <div class="note" role="note" id="issue-container-generatedID-26"><div role="heading" class="note-title marker" id="h-note-26" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-24"><div role="heading" class="note-title marker" id="h-note-24" aria-level="4"><span>Note</span></div><p class="">
 The <code>evidence</code> <a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> provides different and complementary
 information to the <code>proof</code> <a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a>. The <code>evidence</code>
 <a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> is used to express supporting information, such as documentary
@@ -4294,7 +4295,7 @@ credentials in a ZKP <a href="#dfn-presentations" class="internalDFN" data-link-
           </span></figcaption>
         </figure>
 
-        <div class="note" role="note" id="issue-container-generatedID-27"><div role="heading" class="note-title marker" id="h-note-27" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-25" aria-level="4"><span>Note</span></div><p class="">
 Important details regarding the format for the <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credential</a> definition and
 of the proofs are omitted on purpose because they are outside of the scope of
 this document. The purpose of this section is to guide implementers who want to
@@ -4367,14 +4368,14 @@ In the above <a href="#dfn-verifiable-credentials" class="internalDFN" data-link
 the address in the disputed <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a> is wrong.
        </p>
 
-        <div class="note" role="note" id="issue-container-generatedID-28"><div role="heading" class="note-title marker" id="h-note-28" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-26"><div role="heading" class="note-title marker" id="h-note-26" aria-level="4"><span>Note</span></div><p class="">
 If a <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credential</a> does not have an identifier, a content-addressed
 identifier can be used to identify the disputed <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credential</a>. Similarly,
 content-addressed identifiers can be used to uniquely identify individual
 claims.
         </p></div>
 
-        <div class="note" role="note" id="issue-container-generatedID-29"><div role="heading" class="note-title marker" id="h-note-29" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-27"><div role="heading" class="note-title marker" id="h-note-27" aria-level="4"><span>Note</span></div><p class="">
 This area of study is rapidly evolving and developers that are interested in
 publishing <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credentials</a> that dispute the veracity of other
 <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credentials</a> are urged to read the section related to disputes in the
@@ -4483,7 +4484,7 @@ Other values <em class="rfc2119" title="MUST">MUST</em> be represented as a Stri
           </li>
         </ul>
 
-        <div class="note" role="note" id="issue-container-generatedID-30"><div role="heading" class="note-title marker" id="h-note-30" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-28"><div role="heading" class="note-title marker" id="h-note-28" aria-level="4"><span>Note</span></div><p class="">
 As the transformations listed herein have potentially incompatible
 interpretations, additional profiling of the JSON format is required to provide
 a deterministic transformation to the data model.
@@ -4673,7 +4674,7 @@ Contained in the JWS signature part.
             <p>
 If no explicit rule is specified, <a href="#dfn-property" class="internalDFN" data-link-type="dfn">properties</a> are encoded in the same way
 as with a standard <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a>, and are added to the
-<code>vc</code> JWT <a href="#dfn-claims" class="internalDFN" data-link-type="dfn">claim</a>. As with all JWTs, the JWS-based
+<code>vc</code> <a href="#dfn-claims" class="internalDFN" data-link-type="dfn">claim</a> of the JWT. As with all JWTs, the JWS-based
 signature of a <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a> represented in the JWT syntax is
 calculated against the literal JWT string value as presented across the wire,
 before any decoding or transformation rules are applied. The following
@@ -4722,7 +4723,7 @@ specification. For example, the <code>kid</code> can refer to a key in a
             </ul>
 
             <p>
-For backward compatibility with JWT processors, the following registered JWT
+For backward compatibility with JWT processors, the following JWT-registered
 claim names <em class="rfc2119" title="MUST">MUST</em> be used instead of, or in addition to, their respective
 standard <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a> counterparts:
             </p>
@@ -4764,11 +4765,11 @@ used if their use is not explicitly discouraged. Additional
 <code>credentialSubject</code> property of the JWT.
             </p>
 
-            <div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-31" aria-level="7"><span>Note</span></div><p class="">
+            <p>
 For more information about using JOSE header parameters and/or JWT
 claim names not specified herein, see the Verifiable Credentials Implementation
 Guidelines [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-imp-guide" title="Verifiable Credentials Implementation Guidelines 1.0">VC-IMP-GUIDE</a></cite>] document.
-            </p></div>
+            </p>
 
             <p>
 This version of the specification defines no JWT-specific encoding rules for
@@ -4776,17 +4777,18 @@ the concepts outlined in Section
 <a href="#advanced-concepts">Advanced Concepts</a> (for example,
 <code>refreshService</code>, <code>termsOfUse</code>, and
 <code>evidence</code>). These concepts can be encoded as they are without any
-transformation, and can be added to the <code>vc</code> JWT <a href="#dfn-claims" class="internalDFN" data-link-type="dfn">claim</a>.
+transformation, and can be added to the <code>vc</code> <a href="#dfn-claims" class="internalDFN" data-link-type="dfn">claim</a> of the
+JWT.
             </p>
 
-            <div class="note" role="note" id="issue-container-generatedID-32"><div role="heading" class="note-title marker" id="h-note-32" aria-level="7"><span>Note</span></div><p class="">
+            <div class="note" role="note" id="issue-container-generatedID-29"><div role="heading" class="note-title marker" id="h-note-29" aria-level="7"><span>Note</span></div><p class="">
 Implementers are warned that JWTs are not capable of encoding multiple
 <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subjects</a> and are thus not capable of encoding a
 <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a> with more than one <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subject</a>. JWTs might
 support multiple subjects in the future and implementers are advised to refer
 to the <a href="https://www.iana.org/assignments/jwt/">
-JSON Web Token Claim Registry</a> for multi-subject JWT claim names or
-the <a href="https://tools.ietf.org/html/draft-yusef-oauth-nested-jwt-00">
+JSON Web Token Claim Registry</a> for multi-subject JWT claim names or the
+<a href="https://tools.ietf.org/html/draft-yusef-oauth-nested-jwt-00">
 Nested JSON Web Token</a> specification.
             </p></div>
 
@@ -4892,7 +4894,7 @@ header parameter.
 
             <p>
 In the example above, <code>vc</code> does not contain the <code>id</code>
-<a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> because the JWT encoding uses the <code>jti</code>
+<a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> because the <code>JWT</code> encoding uses the <code>jti</code>
 attribute to represent a unique identifier. The <code>sub</code> attribute
 encodes the information represented by the <code>id</code> <a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> of
 <code>credentialSubject</code>.
@@ -4960,10 +4962,10 @@ header parameter.
 
             <p>
 In the example above, <code>vp</code> does not contain the <code>id</code>
-<a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> because the JWT encoding uses the <code>jti</code>
+<a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> because the <code>JWT</code> encoding uses the <code>jti</code>
 attribute to represent a unique identifier. <code>verifiableCredential</code>
 contains a string array of <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a> using
-JWT compact serialization.
+<code>JWT</code> compact serialization.
             </p>
 
             <div class="example" id="example-32-verifiable-presentation-using-jwt-compact-serialization-non-normative">
@@ -5018,9 +5020,10 @@ other related information can be easily discovered and new information can be
 easily merged into the existing graph of knowledge. Linked Data is
 extensible in a decentralized way, greatly reducing barriers to large scale
 integration. The data model in this specification works well with the
-<a href="https://w3c-ccg.github.io/ld-proofs/">Linked Data Proofs</a> and
-the associated <a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/">Linked Data
-  Cryptographic Suites</a>
+<a href="https://w3c-dvcg.github.io/ld-proofs/">Linked Data Proofs</a>,
+<a href="https://w3c-dvcg.github.io/ld-signatures/">Linked Data Signatures</a>,
+and the associated
+<a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/">Linked Data Cryptographic Suites</a>,
 which are designed to protect the data model as described by this specification.
           </p>
 
@@ -5033,7 +5036,7 @@ as passing a valid example in this specification to a Linked Data Signatures
 implementation and generating a digital signature.
           </p>
 
-          <div class="note" role="note" id="issue-container-generatedID-33"><div role="heading" class="note-title marker" id="h-note-33" aria-level="5"><span>Note</span></div><p class="">
+          <div class="note" role="note" id="issue-container-generatedID-30"><div role="heading" class="note-title marker" id="h-note-30" aria-level="5"><span>Note</span></div><p class="">
 For more information about the different qualities of the various syntax
 formats (for example, JSON+JWT, JSON-LD+JWT, or JSON-LD+LD-Proofs), see the
 Verifiable Credentials Implementation Guidelines [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-imp-guide" title="Verifiable Credentials Implementation Guidelines 1.0">VC-IMP-GUIDE</a></cite>] document.
@@ -5042,7 +5045,8 @@ Verifiable Credentials Implementation Guidelines [<cite><a class="bibref" data-l
         </section>
 
       </section>
-  </section>
+    </section>
+  
 
   <section class="informative" id="privacy-considerations">
     <h2 id="x7-privacy-considerations"><bdi class="secno">7. </bdi>Privacy Considerations<a class="self-link" aria-label="§" href="#privacy-considerations"></a></h2><p><em>This section is non-normative.</em></p>
@@ -5087,7 +5091,7 @@ Therefore there is not one approach to privacy that works for all use cases.
 Privacy solutions are use case specific.
       </p>
 
-      <div class="note" role="note" id="issue-container-generatedID-34"><div role="heading" class="note-title marker" id="h-note-34" aria-level="4"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-31"><div role="heading" class="note-title marker" id="h-note-31" aria-level="4"><span>Note</span></div><p class="">
 Even for those wanting to remain anonymous when purchasing alcohol, photo
 identification might still be required to provide appropriate assurance to the
 merchant. The merchant might not need to know your name or other details (other
@@ -5197,7 +5201,7 @@ signature values and metadata are regenerated each time using technologies like
 third-party pairwise signatures, zero-knowledge proofs, or group signatures.
       </p>
 
-      <div class="note" role="note" id="issue-container-generatedID-35"><div role="heading" class="note-title marker" id="h-note-35" aria-level="4"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-32"><div role="heading" class="note-title marker" id="h-note-32" aria-level="4"><span>Note</span></div><p class="">
 Even when using anti-correlation signatures, information might still be
 contained in a <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a> that defeats the anti-correlation
 properties of the cryptography used.
@@ -5331,7 +5335,7 @@ for a specific transaction.
         </li>
       </ul>
 
-      <div class="note" role="note" id="issue-container-generatedID-36"><div role="heading" class="note-title marker" id="h-note-36" aria-level="4"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-33"><div role="heading" class="note-title marker" id="h-note-33" aria-level="4"><span>Note</span></div><p class="">
 While it is possible to practice the principle of minimum disclosure, it might
 be impossible to avoid the strong identification of an individual for
 specific use cases during a single session or over multiple sessions. The
@@ -5885,7 +5889,7 @@ protection to the image by using an [<cite><a class="bibref" data-link-type="bib
 }</pre>
       </div>
 
-      <div class="note" role="note" id="issue-container-generatedID-37"><div role="heading" class="note-title marker" id="h-note-37" aria-level="4"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-34"><div role="heading" class="note-title marker" id="h-note-34" aria-level="4"><span>Note</span></div><p class="">
 It is debatable whether the JSON-LD Contexts above need protection because
 production implementations are expected to ship with static copies of important
 JSON-LD Contexts.
@@ -6133,7 +6137,7 @@ base direction of right-to-left.
 }</pre>
       </div>
 
-      <div class="note" role="note" id="issue-container-generatedID-38"><div role="heading" class="note-title marker" id="h-note-38" aria-level="4"><span>Note</span></div><p class="">
+      <div class="note" role="note" id="issue-container-generatedID-35"><div role="heading" class="note-title marker" id="h-note-35" aria-level="4"><span>Note</span></div><p class="">
 The text above would most likley be rendered incorrectly as left-to-right
 without the explicit expression of language and direction because many systems
 use the first character of a text string to determine text direction.
@@ -6228,7 +6232,7 @@ contained in the <a href="#dfn-verifiable-presentations" class="internalDFN" dat
 in a <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credential</a> to uniquely identify a <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subject</a>.
         </p>
 
-        <div class="note" role="note" id="issue-container-generatedID-39"><div role="heading" class="note-title marker" id="h-note-39" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-36"><div role="heading" class="note-title marker" id="h-note-36" aria-level="4"><span>Note</span></div><p class="">
 For information on how authentication and WebAuthn might work with
 <a href="#dfn-verifiable-credentials" class="internalDFN" data-link-type="dfn">verifiable credentials</a>, see the Verifiable Credentials Implementation
 Guidelines [<cite><a class="bibref" data-link-type="biblio" href="#bib-vc-imp-guide" title="Verifiable Credentials Implementation Guidelines 1.0">VC-IMP-GUIDE</a></cite>] document.
@@ -6313,7 +6317,7 @@ it is expected to exist and be a valid value, such as
           </li>
         </ul>
 
-        <div class="note" role="note" id="issue-container-generatedID-40"><div role="heading" class="note-title marker" id="h-note-40" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-37"><div role="heading" class="note-title marker" id="h-note-37" aria-level="4"><span>Note</span></div><p class="">
 The digital signature provides a number of protections, other than tamper
 resistance, which are not immediately obvious. For example, a Linked Data
 Signature <code>created</code> <a href="#dfn-property" class="internalDFN" data-link-type="dfn">property</a> establishes a date and time
@@ -6374,6 +6378,8 @@ franchise. Policy information expressed by the <a href="#dfn-issuers" class="int
         </p>
       </section>
     </section>
+
+  
 
   <section class="appendix informative" id="base-context">
       <h2 id="b-base-context"><bdi class="secno">B. </bdi>Base Context<a class="self-link" aria-label="§" href="#base-context"></a></h2><p><em>This section is non-normative.</em></p>
@@ -6706,7 +6712,7 @@ is invalid.
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "ageOver": 21
     },
-  "nonTransferable": true,
+  "nonTransferable": "True",
   "proof": { ..
   "verificationMethod": "did:example:ebfeb1f712ebc6f1c276e12ec21",
   ... }
@@ -6813,7 +6819,7 @@ The mechanisms listed above describe the relationship between the
 whether the relationship is sufficiently expressed for a given use case.
         </p>
 
-        <div class="note" role="note" id="issue-container-generatedID-41"><div role="heading" class="note-title marker" id="h-note-41" aria-level="4"><span>Note</span></div><p class="">
+        <div class="note" role="note" id="issue-container-generatedID-38"><div role="heading" class="note-title marker" id="h-note-38" aria-level="4"><span>Note</span></div><p class="">
 The additional mechanisms the <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">issuer</a> or the <a href="#dfn-verifier" class="internalDFN" data-link-type="dfn">verifier</a> uses to
 verify the relationship between the <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subject</a> and the <a href="#dfn-holders" class="internalDFN" data-link-type="dfn">holder</a> are
 outside the scope of this specification.
@@ -6955,7 +6961,7 @@ verifiable credential that was passed to it by the subject</span>
     "https://www.w3.org/2018/credentials/v1",
     "https://www.w3.org/2018/credentials/examples/v1"
   ],
-  "id": "https://example.com/VP/0987654321",
+  "id": "did:example:76e12ec21ebhyu1f712ebc6f1z2",
   "type": ["VerifiablePresentation"],
   "verifiableCredential": [
     {
@@ -6963,19 +6969,17 @@ verifiable credential that was passed to it by the subject</span>
        "https://www.w3.org/2018/credentials/v1",
        "https://www.w3.org/2018/credentials/examples/v1"
       ],
-      "id": "http://pharma.example.com/credentials/3732",
+      "id": "http://example.gov/credentials/3732",
       "type": ["VerifiableCredential", "PrescriptionCredential"],
-      "issuer": "https://pharma.example.com/issuer/4",
-      "issuanceDate": "2010-01-01T19:23:24Z",
+      "issuer": "https://example.edu",
+      "issuanceDate": "2010-01-01T19:73:24Z",
       "credentialSubject": {
         "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
         "prescription": {....}
       },
-      "credentialStatus": {
-        "id": "https://pharma.example.com/credentials/status/3#94567",
-        "type": "RevocationList2020Status",
-        "revocationListIndex": "94567",
-        "revocationListCredential": "https://pharma.example.com/credentials/status/3"
+      "revocation": {
+        "id": "http://example.gov/revocations/738",
+        "type": "SimpleRevocationList2017"
       },
       "proof": {....}
     },
@@ -6987,7 +6991,7 @@ verifiable credential that was passed to it by the subject</span>
       "id": "https://example.com/VC/123456789",
       "type": ["VerifiableCredential", "PrescriptionCredential"],
       "issuer": "did:example:ebfeb1f712ebc6f1c276e12ec21",
-      "issuanceDate": "2010-01-03T19:53:24Z",
+      "issuanceDate": "2010-01-03T19:73:24Z",
       "credentialSubject": {
         "id": "did:example:76e12ec21ebhyu1f712ebc6f1z2",
         "prescription": {....}
@@ -7033,7 +7037,7 @@ the <a href="#dfn-issuers" class="internalDFN" data-link-type="dfn">issuer</a> m
 into the <a href="#dfn-subjects" class="internalDFN" data-link-type="dfn">subject's</a> <a href="#dfn-credential" class="internalDFN" data-link-type="dfn">credential</a>.
         </p>
 
-    <div class="note" role="note" id="issue-container-generatedID-42"><div role="heading" class="note-title marker" id="h-note-42" aria-level="4"><span>Note</span></div><p class="">
+    <div class="note" role="note" id="issue-container-generatedID-39"><div role="heading" class="note-title marker" id="h-note-39" aria-level="4"><span>Note</span></div><p class="">
 Verifiable credentials are not an authorization framework and therefore
 delegation is outside the scope of this specification. However, it is understood
 that verifiable credentials are likely to be used to build authorization and
@@ -7058,7 +7062,7 @@ the subject of the credential, but who has a relationship with the issuer</span>
     "type": "LawEnforcement",
     "id": "did:example:ebfeb1276e12ec21f712ebc6f1c"
   },
-  "issuanceDate": "2010-01-01T19:23:24Z",
+  "issuanceDate": "2010-01-01T19:73:24Z",
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "name": "Mr John Doe",
@@ -7231,7 +7235,7 @@ Benjamin Young, Kaliya Young, Dmitri Zagidulin, and Brent Zundel.
         Informative references
       <a class="self-link" aria-label="§" href="#informative-references"></a></h3>
     <dl class="bibliography">
-      <dt id="bib-cl-signatures">[CL-SIGNATURES]</dt><dd><a href="https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols"><cite>A Signature Scheme with Efficient Protocols</cite></a>. Jan Camenisch; Anna Lysyanskaya.  IBM Research. Peer Reviewed Paper. URL: <a href="https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols">https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols</a></dd><dt id="bib-demographics">[DEMOGRAPHICS]</dt><dd><a href="http://dataprivacylab.org/projects/identifiability/paper1.pdf"><cite>Simple Demographics Often Identify People Uniquely</cite></a>. Latanya Sweeney.  Data Privacy Lab. URL: <a href="http://dataprivacylab.org/projects/identifiability/paper1.pdf">http://dataprivacylab.org/projects/identifiability/paper1.pdf</a></dd><dt id="bib-hashlink">[HASHLINK]</dt><dd><a href="https://tools.ietf.org/html/draft-sporny-hashlink"><cite>Cryptographic Hyperlinks</cite></a>. Manu Sporny.  Internet Engineering Task Force (IETF). Internet-Draft. URL: <a href="https://tools.ietf.org/html/draft-sporny-hashlink">https://tools.ietf.org/html/draft-sporny-hashlink</a></dd><dt id="bib-ipfs">[IPFS]</dt><dd><a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System"><cite>InterPlanetary File System (IPFS)</cite></a>.  Wikipedia. URL: <a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System">https://en.wikipedia.org/wiki/InterPlanetary_File_System</a></dd><dt id="bib-json">[JSON]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8259"><cite>The JavaScript Object Notation (JSON) Data Interchange Format</cite></a>. T. Bray, Ed..  IETF. December 2017. Internet Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc8259">https://www.rfc-editor.org/rfc/rfc8259</a></dd><dt id="bib-json-schema-2018">[JSON-SCHEMA-2018]</dt><dd><a href="https://tools.ietf.org/html/draft-handrews-json-schema"><cite>JSON Schema: A Media Type for Describing JSON Documents</cite></a>. Austin Wright; Henry Andrews.  Internet Engineering Task Force (IETF). Internet-Draft. URL: <a href="https://tools.ietf.org/html/draft-handrews-json-schema">https://tools.ietf.org/html/draft-handrews-json-schema</a></dd><dt id="bib-ld-proofs">[LD-PROOFS]</dt><dd><a href="https://w3c-ccg.github.io/ld-proofs/"><cite>Linked Data Proofs</cite></a>. Manu Sporny; Dave Longley.  Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/ld-proofs/">https://w3c-ccg.github.io/ld-proofs/</a></dd><dt id="bib-ldp-registry">[LDP-REGISTRY]</dt><dd><a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/"><cite>Linked Data Cryptographic Suite Registry</cite></a>. Manu Sporny; Drummond Reed; Orie Steele.  Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/">https://w3c-ccg.github.io/ld-cryptosuite-registry/</a></dd><dt id="bib-linked-data">[LINKED-DATA]</dt><dd><a href="https://www.w3.org/DesignIssues/LinkedData.html"><cite>Linked Data Design Issues</cite></a>. Tim Berners-Lee.  W3C. 27 July 2006. W3C-Internal Document. URL: <a href="https://www.w3.org/DesignIssues/LinkedData.html">https://www.w3.org/DesignIssues/LinkedData.html</a></dd><dt id="bib-rfc3986">[RFC3986]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc3986"><cite>Uniform Resource Identifier (URI): Generic Syntax</cite></a>. T. Berners-Lee; R. Fielding; L. Masinter.  IETF. January 2005. Internet Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc3986">https://www.rfc-editor.org/rfc/rfc3986</a></dd><dt id="bib-rfc7049">[RFC7049]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7049"><cite>Concise Binary Object Representation (CBOR)</cite></a>. C. Bormann; P. Hoffman.  IETF. October 2013. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7049">https://www.rfc-editor.org/rfc/rfc7049</a></dd><dt id="bib-rfc7516">[RFC7516]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7516"><cite>JSON Web Encryption (JWE)</cite></a>. M. Jones; J. Hildebrand.  IETF. May 2015. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7516">https://www.rfc-editor.org/rfc/rfc7516</a></dd><dt id="bib-rfc7797">[RFC7797]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7797"><cite>JSON Web Signature (JWS) Unencoded Payload Option</cite></a>. M. Jones.  IETF. February 2016. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7797">https://www.rfc-editor.org/rfc/rfc7797</a></dd><dt id="bib-rfc8471">[RFC8471]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8471"><cite>The Token Binding Protocol Version 1.0</cite></a>. A. Popov, Ed.; M. Nystroem; D. Balfanz; J. Hodges.  IETF. October 2018. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc8471">https://www.rfc-editor.org/rfc/rfc8471</a></dd><dt id="bib-string-meta">[STRING-META]</dt><dd><a href="https://www.w3.org/TR/string-meta/"><cite>Strings on the Web: Language and Direction Metadata</cite></a>. Addison Phillips; Richard Ishida.  Internationalization Working Group. W3C Working Draft. URL: <a href="https://www.w3.org/TR/string-meta/">https://www.w3.org/TR/string-meta/</a></dd><dt id="bib-vc-extension-registry">[VC-EXTENSION-REGISTRY]</dt><dd><a href="https://w3c-ccg.github.io/vc-extension-registry/"><cite>Verifiable Credentials Extension Registry</cite></a>. Manu Sporny.  Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/vc-extension-registry/">https://w3c-ccg.github.io/vc-extension-registry/</a></dd><dt id="bib-vc-imp-guide">[VC-IMP-GUIDE]</dt><dd><a href="https://w3c.github.io/vc-imp-guide/"><cite>Verifiable Credentials Implementation Guidelines 1.0</cite></a>. Andrei Sambra; Manu Sporny.  Credentials Community Group. W3C Editor's Draft. URL: <a href="https://w3c.github.io/vc-imp-guide/">https://w3c.github.io/vc-imp-guide/</a></dd><dt id="bib-vc-usecases">[VC-USECASES]</dt><dd><a href="https://www.w3.org/TR/verifiable-claims-use-cases/"><cite>Verifiable Claims Use Cases</cite></a>. Shane McCarron; Daniel Burnett; Gregg Kellogg; Brian Sletten; Manu Sporny.  Verifiable Claims Working Group. W3C Note. URL: <a href="https://www.w3.org/TR/verifiable-claims-use-cases/">https://www.w3.org/TR/verifiable-claims-use-cases/</a></dd><dt id="bib-wcag21">[WCAG21]</dt><dd><a href="https://www.w3.org/TR/WCAG21/"><cite>Web Content Accessibility Guidelines (WCAG) 2.1</cite></a>. Andrew Kirkpatrick; Joshue O'Connor; Alastair Campbell; Michael Cooper.  W3C. 5 June 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
+      <dt id="bib-cl-signatures">[CL-SIGNATURES]</dt><dd><a href="http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf"><cite>A Signature Scheme with Efficient Protocols</cite></a>. Jan Camenisch; Anna Lysyanskaya.  IBM Research. Peer Reviewed Paper. URL: <a href="http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf">http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf</a></dd><dt id="bib-demographics">[DEMOGRAPHICS]</dt><dd><a href="http://dataprivacylab.org/projects/identifiability/paper1.pdf"><cite>Simple Demographics Often Identify People Uniquely</cite></a>. Latanya Sweeney.  Data Privacy Lab. URL: <a href="http://dataprivacylab.org/projects/identifiability/paper1.pdf">http://dataprivacylab.org/projects/identifiability/paper1.pdf</a></dd><dt id="bib-hashlink">[HASHLINK]</dt><dd><a href="https://tools.ietf.org/html/draft-sporny-hashlink"><cite>Cryptographic Hyperlinks</cite></a>. Manu Sporny.  Internet Engineering Task Force (IETF). Internet-Draft. URL: <a href="https://tools.ietf.org/html/draft-sporny-hashlink">https://tools.ietf.org/html/draft-sporny-hashlink</a></dd><dt id="bib-ipfs">[IPFS]</dt><dd><a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System"><cite>InterPlanetary File System (IPFS)</cite></a>.  Wikipedia. URL: <a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System">https://en.wikipedia.org/wiki/InterPlanetary_File_System</a></dd><dt id="bib-json">[JSON]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8259"><cite>The JavaScript Object Notation (JSON) Data Interchange Format</cite></a>. T. Bray, Ed..  IETF. December 2017. Internet Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc8259">https://www.rfc-editor.org/rfc/rfc8259</a></dd><dt id="bib-json-schema-2018">[JSON-SCHEMA-2018]</dt><dd><a href="https://tools.ietf.org/html/draft-handrews-json-schema"><cite>JSON Schema: A Media Type for Describing JSON Documents</cite></a>. Austin Wright; Henry Andrews.  Internet Engineering Task Force (IETF). Internet-Draft. URL: <a href="https://tools.ietf.org/html/draft-handrews-json-schema">https://tools.ietf.org/html/draft-handrews-json-schema</a></dd><dt id="bib-ld-proofs">[LD-PROOFS]</dt><dd><a href="https://w3c-dvcg.github.io/ld-proofs/"><cite>Linked Data Proofs</cite></a>. Manu Sporny; Dave Longley.  Digital Verification Community Group. CG-DRAFT. URL: <a href="https://w3c-dvcg.github.io/ld-proofs/">https://w3c-dvcg.github.io/ld-proofs/</a></dd><dt id="bib-ld-signatures">[LD-SIGNATURES]</dt><dd><a href="https://w3c-dvcg.github.io/ld-signatures/"><cite>Linked Data Signatures</cite></a>. Manu Sporny; Dave Longley.  Digital Verification Community Group. CG-DRAFT. URL: <a href="https://w3c-dvcg.github.io/ld-signatures/">https://w3c-dvcg.github.io/ld-signatures/</a></dd><dt id="bib-ldp-registry">[LDP-REGISTRY]</dt><dd><a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/"><cite>Linked Data Cryptographic Suite Registry</cite></a>. Manu Sporny; Drummond Reed; Orie Steele.  Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/">https://w3c-ccg.github.io/ld-cryptosuite-registry/</a></dd><dt id="bib-lds-rsa2018">[LDS-RSA2018]</dt><dd><a href="https://w3c-dvcg.github.io/lds-rsa2018/"><cite>The 2018 RSA Linked Data Signature Suite</cite></a>. Manu Sporny; Dave Longley.  Digital Verification Community Group. CG-DRAFT. URL: <a href="https://w3c-dvcg.github.io/lds-rsa2018/">https://w3c-dvcg.github.io/lds-rsa2018/</a></dd><dt id="bib-linked-data">[LINKED-DATA]</dt><dd><a href="https://www.w3.org/DesignIssues/LinkedData.html"><cite>Linked Data Design Issues</cite></a>. Tim Berners-Lee.  W3C. 27 July 2006. W3C-Internal Document. URL: <a href="https://www.w3.org/DesignIssues/LinkedData.html">https://www.w3.org/DesignIssues/LinkedData.html</a></dd><dt id="bib-rfc3986">[RFC3986]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc3986"><cite>Uniform Resource Identifier (URI): Generic Syntax</cite></a>. T. Berners-Lee; R. Fielding; L. Masinter.  IETF. January 2005. Internet Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc3986">https://www.rfc-editor.org/rfc/rfc3986</a></dd><dt id="bib-rfc7049">[RFC7049]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7049"><cite>Concise Binary Object Representation (CBOR)</cite></a>. C. Bormann; P. Hoffman.  IETF. October 2013. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7049">https://www.rfc-editor.org/rfc/rfc7049</a></dd><dt id="bib-rfc7516">[RFC7516]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7516"><cite>JSON Web Encryption (JWE)</cite></a>. M. Jones; J. Hildebrand.  IETF. May 2015. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7516">https://www.rfc-editor.org/rfc/rfc7516</a></dd><dt id="bib-rfc7797">[RFC7797]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7797"><cite>JSON Web Signature (JWS) Unencoded Payload Option</cite></a>. M. Jones.  IETF. February 2016. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc7797">https://www.rfc-editor.org/rfc/rfc7797</a></dd><dt id="bib-rfc8471">[RFC8471]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8471"><cite>The Token Binding Protocol Version 1.0</cite></a>. A. Popov, Ed.; M. Nystroem; D. Balfanz; J. Hodges.  IETF. October 2018. Proposed Standard. URL: <a href="https://www.rfc-editor.org/rfc/rfc8471">https://www.rfc-editor.org/rfc/rfc8471</a></dd><dt id="bib-string-meta">[STRING-META]</dt><dd><a href="https://www.w3.org/TR/string-meta/"><cite>Strings on the Web: Language and Direction Metadata</cite></a>. Addison Phillips; Richard Ishida.  Internationalization Working Group. W3C Working Draft. URL: <a href="https://www.w3.org/TR/string-meta/">https://www.w3.org/TR/string-meta/</a></dd><dt id="bib-vc-extension-registry">[VC-EXTENSION-REGISTRY]</dt><dd><a href="https://w3c-ccg.github.io/vc-extension-registry/"><cite>Verifiable Credentials Extension Registry</cite></a>. Manu Sporny.  Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/vc-extension-registry/">https://w3c-ccg.github.io/vc-extension-registry/</a></dd><dt id="bib-vc-imp-guide">[VC-IMP-GUIDE]</dt><dd><a href="https://w3c.github.io/vc-imp-guide/"><cite>Verifiable Credentials Implementation Guidelines 1.0</cite></a>. Andrei Sambra; Manu Sporny.  Credentials Community Group. W3C Editor's Draft. URL: <a href="https://w3c.github.io/vc-imp-guide/">https://w3c.github.io/vc-imp-guide/</a></dd><dt id="bib-vc-usecases">[VC-USECASES]</dt><dd><a href="https://www.w3.org/TR/verifiable-claims-use-cases/"><cite>Verifiable Claims Use Cases</cite></a>. Shane McCarron; Daniel Burnett; Gregg Kellogg; Brian Sletten; Manu Sporny.  Verifiable Claims Working Group. W3C Note. URL: <a href="https://www.w3.org/TR/verifiable-claims-use-cases/">https://www.w3.org/TR/verifiable-claims-use-cases/</a></dd><dt id="bib-wcag21">[WCAG21]</dt><dd><a href="https://www.w3.org/TR/WCAG21/"><cite>Web Content Accessibility Guidelines (WCAG) 2.1</cite></a>. Andrew Kirkpatrick; Joshue O'Connor; Alastair Campbell; Michael Cooper.  W3C. 5 June 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
     </dl></section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
   </p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
