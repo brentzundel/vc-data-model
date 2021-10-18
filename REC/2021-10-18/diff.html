@@ -3,7 +3,7 @@
     <title>Verifiable Credentials Data Model 1.1</title>
     
     
-    
+    <style id=respec-mainstyle>@keyframes pop{0%{transform:scale(1,1)}25%{transform:scale(1.25,1.25);opacity:.75}100%{transform:scale(1,1)}}.hljs{background:0 0!important}a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}dfn{font-weight:700}a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}a.bibref{text-decoration:none}.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}@supports not (text-decoration:red wavy underline){.respec-offending-element:not(pre){display:inline-block}.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}}#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}cite .bibref{font-style:normal}code{color:#c63501}th code{color:inherit}a[href].orcid{padding-left:4px;padding-right:4px}a[href].orcid>svg{margin-bottom:-2px}.toc a,.tof a{text-decoration:none}a .figno,a .secno{color:#000}ol.tof,ul.tof{list-style:none outside none}.caption{margin-top:.5em;font-style:italic}table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}.simple th a{color:#fff;padding:3px 5px;text-align:left}.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}.simple td{padding:3px 10px;border-top:1px solid #ddd}.simple tr:nth-child(even){background:#f0f6ff}.section dd>p:first-child{margin-top:0}.section dd>p:last-child{margin-bottom:0}.section dd{margin-bottom:1em}.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}#issue-summary>ul,.respec-dfn-list{column-count:2}#issue-summary li,.respec-dfn-list li{list-style:none}details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}details.respec-tests-details>*{padding-right:2em}details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}details.respec-tests-details>ul{width:100%;margin-top:-.3em}details.respec-tests-details>li{padding-left:1em}a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}h2,h3,h4,h5,h6{position:relative}aside.example .marker>a.self-link{color:inherit}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}@media (max-width:767px){dd{margin-left:0}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}}@media print{.removeOnSave{display:none}}</style>
     
     
     <style>
@@ -32,7 +32,7 @@ pre .comment {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
     </style>
-  <style id=respec-mainstyle>@keyframes pop{0%{transform:scale(1,1)}25%{transform:scale(1.25,1.25);opacity:.75}100%{transform:scale(1,1)}}.hljs{background:0 0!important}a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}dfn{font-weight:700}a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}a.bibref{text-decoration:none}.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}@supports not (text-decoration:red wavy underline){.respec-offending-element:not(pre){display:inline-block}.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}}#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}cite .bibref{font-style:normal}code{color:#c63501}th code{color:inherit}a[href].orcid{padding-left:4px;padding-right:4px}a[href].orcid>svg{margin-bottom:-2px}.toc a,.tof a{text-decoration:none}a .figno,a .secno{color:#000}ol.tof,ul.tof{list-style:none outside none}.caption{margin-top:.5em;font-style:italic}table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}.simple th a{color:#fff;padding:3px 5px;text-align:left}.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}.simple td{padding:3px 10px;border-top:1px solid #ddd}.simple tr:nth-child(even){background:#f0f6ff}.section dd>p:first-child{margin-top:0}.section dd>p:last-child{margin-bottom:0}.section dd{margin-bottom:1em}.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}#issue-summary>ul,.respec-dfn-list{column-count:2}#issue-summary li,.respec-dfn-list li{list-style:none}details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}details.respec-tests-details>*{padding-right:2em}details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}details.respec-tests-details>ul{width:100%;margin-top:-.3em}details.respec-tests-details>li{padding-left:1em}a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}h2,h3,h4,h5,h6{position:relative}aside.example .marker>a.self-link{color:inherit}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}@media (max-width:767px){dd{margin-left:0}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}}@media print{.removeOnSave{display:none}}</style><meta content="Credentials are a part of our daily lives; driver's licenses are used to
+  <meta content="Credentials are a part of our daily lives; driver's licenses are used to
 assert that we are capable of operating a motor vehicle, university degrees
 can be used to assert our level of education, and government-issued passports
 enable us to travel between countries. This specification provides a mechanism
@@ -67,7 +67,7 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
   "name": "Verifiable Credentials Data Model 1.1",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-  "datePublished": "2021-10-17",
+  "datePublished": "2021-10-18",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -320,10 +320,10 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
       }
     },
     {
-      "id": "https://w3c-ccg.github.io/ld-proofs/",
+      "id": "https://w3c-dvcg.github.io/ld-signatures/",
       "type": "TechArticle",
-      "name": "Linked Data Proofs",
-      "url": "https://w3c-ccg.github.io/ld-proofs/",
+      "name": "Linked Data Signatures",
+      "url": "https://w3c-dvcg.github.io/ld-signatures/",
       "creator": [
         {
           "name": "Manu Sporny"
@@ -333,14 +333,14 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
         }
       ],
       "publisher": {
-        "name": "Credentials Community Group"
+        "name": "Digital Verification Community Group"
       }
     },
     {
-      "id": "https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols",
+      "id": "http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf",
       "type": "TechArticle",
       "name": "A Signature Scheme with Efficient Protocols",
-      "url": "https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols",
+      "url": "http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf",
       "creator": [
         {
           "name": "Jan Camenisch"
@@ -374,23 +374,37 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
       }
     },
     {
-      "id": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "id": "https://w3c-dvcg.github.io/ld-proofs/",
       "type": "TechArticle",
-      "name": "Linked Data Cryptographic Suite Registry",
-      "url": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "name": "Linked Data Proofs",
+      "url": "https://w3c-dvcg.github.io/ld-proofs/",
       "creator": [
         {
           "name": "Manu Sporny"
         },
         {
-          "name": "Drummond Reed"
-        },
-        {
-          "name": "Orie Steele"
+          "name": "Dave Longley"
         }
       ],
       "publisher": {
-        "name": "Credentials Community Group"
+        "name": "Digital Verification Community Group"
+      }
+    },
+    {
+      "id": "https://w3c-dvcg.github.io/lds-rsa2018/",
+      "type": "TechArticle",
+      "name": "The 2018 RSA Linked Data Signature Suite",
+      "url": "https://w3c-dvcg.github.io/lds-rsa2018/",
+      "creator": [
+        {
+          "name": "Manu Sporny"
+        },
+        {
+          "name": "Dave Longley"
+        }
+      ],
+      "publisher": {
+        "name": "Digital Verification Community Group"
       }
     },
     {
@@ -467,6 +481,26 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
       ],
       "publisher": {
         "name": "Internet Engineering Task Force (IETF)"
+      }
+    },
+    {
+      "id": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "type": "TechArticle",
+      "name": "Linked Data Cryptographic Suite Registry",
+      "url": "https://w3c-ccg.github.io/ld-cryptosuite-registry/",
+      "creator": [
+        {
+          "name": "Manu Sporny"
+        },
+        {
+          "name": "Drummond Reed"
+        },
+        {
+          "name": "Orie Steele"
+        }
+      ],
+      "publisher": {
+        "name": "Credentials Community Group"
       }
     },
     {
@@ -625,8 +659,6 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
   "implementationReportURI": "https://w3c.github.io/vc-test-suite/implementations/",
   "previousMaturity": "REC",
   "previousPublishDate": "2019-11-19",
-  "previousURI": "https://www.w3.org/TR/2019/REC-vc-data-model-20191119/",
-  "previousDiffURI": "https://www.w3.org/TR/2019/REC-vc-data-model-20190903/",
   "errata": "https://w3c.github.io/vc-data-model/errata.html",
   "localBiblio": {
     "REST": {
@@ -675,14 +707,25 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
     },
     "LD-PROOFS": {
       "title": "Linked Data Proofs",
-      "href": "https://w3c-ccg.github.io/ld-proofs/",
+      "href": "https://w3c-dvcg.github.io/ld-proofs/",
       "authors": [
         "Manu Sporny",
         "Dave Longley"
       ],
       "status": "CG-DRAFT",
-      "publisher": "Credentials Community Group",
+      "publisher": "Digital Verification Community Group",
       "id": "ld-proofs"
+    },
+    "LD-SIGNATURES": {
+      "title": "Linked Data Signatures",
+      "href": "https://w3c-dvcg.github.io/ld-signatures/",
+      "authors": [
+        "Manu Sporny",
+        "Dave Longley"
+      ],
+      "status": "CG-DRAFT",
+      "publisher": "Digital Verification Community Group",
+      "id": "ld-signatures"
     },
     "LDP-REGISTRY": {
       "title": "Linked Data Cryptographic Suite Registry",
@@ -696,9 +739,20 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
       "publisher": "Credentials Community Group",
       "id": "ldp-registry"
     },
+    "LDS-RSA2018": {
+      "title": "The 2018 RSA Linked Data Signature Suite",
+      "href": "https://w3c-dvcg.github.io/lds-rsa2018/",
+      "authors": [
+        "Manu Sporny",
+        "Dave Longley"
+      ],
+      "status": "CG-DRAFT",
+      "publisher": "Digital Verification Community Group",
+      "id": "lds-rsa2018"
+    },
     "CL-SIGNATURES": {
       "title": "A Signature Scheme with Efficient Protocols",
-      "href": "https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols",
+      "href": "http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf",
       "authors": [
         "Jan Camenisch",
         "Anna Lysyanskaya"
@@ -872,8 +926,8 @@ cryptographically secure, privacy respecting, and machine-verifiable." name=desc
   "wgPatentURI": "https://www.w3.org/2004/01/pp-impl/98922/status",
   "maxTocLevel": 2,
   "inlineCSS": true,
-  "publishISODate": "2021-10-17T00:00:00.000Z",
-  "generatedSubtitle": "Recommendation 17 October 2021"
+  "publishISODate": "2021-10-18T00:00:00.000Z",
+  "generatedSubtitle": "Recommendation 18 October 2021"
 }</script><link href="https://www.w3.org/StyleSheets/TR/2016/W3C-REC" rel=stylesheet><style type='text/css'>
 .diff-old-a {
   font-size: smaller;
@@ -923,8 +977,8 @@ Recommendation
 November
 2019
 </del>
-<time class=dt-published datetime=2021-10-17>
-<ins class="diff-chg">17
+<time class=dt-published datetime=2021-10-18>
+<ins class="diff-chg">18
 October
 2021
 </ins>
@@ -937,8 +991,8 @@ version:
 <dd>
 <del class="diff-old">https://www.w3.org/TR/2019/REC-vc-data-model-20191119/
 </del>
-<a href="https://www.w3.org/TR/2021/REC-vc-data-model-20211017/" class=u-url>
-<ins class="diff-chg">https://www.w3.org/TR/2021/REC-vc-data-model-20211017/
+<a href="https://www.w3.org/TR/2021/REC-vc-data-model-20211018/" class=u-url>
+<ins class="diff-chg">https://www.w3.org/TR/2021/REC-vc-data-model-20211018/
 </ins>
 </a>
 <dt>
@@ -4145,17 +4199,6 @@ specification:
 </p>
 <ul>
 <li>
-<a data-link-type=dfn href=#dfn-credential class=internalDFN>
-<ins class="diff-new">Credentials
-</ins></a><ins class="diff-new">
-represent
-statements
-made
-by
-an
-</ins><a data-link-type=dfn href=#dfn-issuers class=internalDFN><ins class="diff-new">
-issuer
-</ins></a>.</li><li>
 <a data-link-type=dfn href=#dfn-verifiable-credentials class=internalDFN>
 Verifiable
 credentials
@@ -4182,11 +4225,6 @@ Holders
 assemble
 collections
 of
-<a data-link-type=dfn href=#dfn-credential class=internalDFN>
-<ins class="diff-new">credentials
-</ins></a><ins class="diff-new">
-and/or
-</ins>
 <a data-link-type=dfn href=#dfn-verifiable-credentials class=internalDFN>
 verifiable
 credentials
@@ -4201,28 +4239,12 @@ a
 single
 artifact,
 a
-<del class="diff-old">verifiable
-</del>
-<a data-link-type=dfn href=#dfn-presentations class=internalDFN>
+<a data-link-type=dfn href=#dfn-verifiable-presentations class=internalDFN>
+verifiable
 presentation
 </a>.
 </li>
 <li>
-<ins class="diff-new">Holders
-transform
-</ins><a data-link-type=dfn href=#dfn-presentations class=internalDFN><ins class="diff-new">
-presentations
-</ins></a><ins class="diff-new">
-into
-</ins><a data-link-type=dfn href=#dfn-verifiable-presentations class=internalDFN><ins class="diff-new">
-verifiable
-presentations
-</ins></a><ins class="diff-new">
-to
-render
-them
-tamper-evident.
-</ins></li><li>
 <a data-link-type=dfn href=#dfn-issuers class=internalDFN>
 Issuers
 </a>
@@ -4640,97 +4662,6 @@ credentials
 </a>.
 </li>
 <li>
-<ins class="diff-new">The
-processes
-of
-cryptographically
-protecting
-</ins><a data-link-type=dfn href=#dfn-credential class=internalDFN><ins class="diff-new">
-credentials
-</ins></a><ins class="diff-new">
-and
-</ins><a data-link-type=dfn href=#dfn-presentations class=internalDFN><ins class="diff-new">
-presentations
-</ins></a>,<ins class="diff-new">
-and
-verifying
-</ins><a data-link-type=dfn href=#dfn-verifiable-credentials class=internalDFN><ins class="diff-new">
-verifiable
-credentials
-</ins></a><ins class="diff-new">
-and
-</ins><a data-link-type=dfn href=#dfn-verifiable-presentations class=internalDFN><ins class="diff-new">
-verifiable
-presentations
-</ins></a>,<ins class="diff-new">
-have
-to
-be
-deterministic,
-bi-directional,
-and
-lossless.
-Any
-verification
-of
-a
-</ins><a data-link-type=dfn href=#dfn-verifiable-credentials class=internalDFN><ins class="diff-new">
-verifiable
-credential
-</ins></a><ins class="diff-new">
-or
-</ins><a data-link-type=dfn href=#dfn-verifiable-presentations class=internalDFN><ins class="diff-new">
-verifiable
-presentation
-</ins></a><ins class="diff-new">
-has
-to
-be
-transformable
-to
-the
-generic
-data
-model
-defined
-in
-this
-document
-in
-a
-deterministic
-process,
-such
-that
-the
-resulting
-</ins><a data-link-type=dfn href=#dfn-credential class=internalDFN><ins class="diff-new">
-credential
-</ins></a><ins class="diff-new">
-or
-</ins><a data-link-type=dfn href=#dfn-presentations class=internalDFN><ins class="diff-new">
-presentation
-</ins></a><ins class="diff-new">
-is
-semantically
-and
-syntactically
-equivalent
-to
-the
-original
-construct,
-so
-that
-it
-can
-be
-processed
-in
-an
-interoperable
-fashion.
-</ins></li><li>
 <a data-link-type=dfn href=#dfn-verifiable-credentials class=internalDFN>
 Verifiable
 credentials
@@ -5342,17 +5273,11 @@ RFC7515
 <li>
 Linked
 Data
-<del class="diff-old">Signatures
-</del>
-<ins class="diff-chg">Proofs
-</ins>
+Signatures
 [
 <cite>
-<del class="diff-old">LD-SIGNATURES
-</del>
-<a data-link-type=biblio href=#bib-ld-proofs class=bibref title="Linked Data Proofs">
-<ins class="diff-chg">LD-PROOFS
-</ins>
+<a data-link-type=biblio href=#bib-ld-signatures class=bibref title="Linked Data Signatures">
+LD-SIGNATURES
 </a>
 </cite>
 ]
@@ -7461,7 +7386,7 @@ digital
 signature.
 </p>
 <figure id=info-graph-vc>
-<img src="diagrams/credential-graph.svg" style="margin: auto; display: block; width: 100%;" alt="diagram with a Credential Graph on top connected via a proof to a Proof Graph on the bottom. The Credental Graph has Credential 123 with 4 properties: 'type' of value AlumniCredential, 'issuer' of Example University, 'issuanceDate' of 2010-01-01T19:23:24Z, and credentialSubject of Pat, who has an alumniOf property with value of Example University. The Proof Graph has Signature 456 with 5 properties: 'type' of RsaSignature2018, 'verificationMethod' of Example University Public Key 7, 'created' of 2017-06-18T21:19:10Z, and 'jws' of 'BavEll0...3JT24='">
+<img src="diagrams/credential-graph.svg" style="margin: auto; display: block; width: 100%;" alt="diagram with a Credential Graph on top connected via a proof to a Proof Graph on the bottom. The Credental Graph has Credential 123 with 4 properties: 'type' of value AlumniCredential, 'issuer' of Example University, 'issuanceDate' of 2010-01-01T19:73:24Z, and credentialSubject of Pat, who has an alumniOf property with value of Example University. The Proof Graph has Signature 456 with 5 properties: 'type' of RsaSignature2018, 'verificationMethod' of Example University Public Key 7, 'created' of 2017-06-18T21:19:10Z, and 'jws' of 'BavEll0...3JT24='">
 <figcaption style="text-align: center;">
 Figure
 <bdi class=figno>
@@ -7855,8 +7780,6 @@ into
 verifiable
 presentations
 </a>.
-</p>
-<p>
 <a href=#info-graph-vp class=fig-ref title="Information graphs associated with a basic verifiable presentation.">
 Figure
 <bdi class=figno>
@@ -7889,20 +7812,9 @@ graphs
 </a>.
 The
 first
-<ins class="diff-new">of
-these
-information
-</ins>
 <a data-link-type=dfn href=#dfn-graphs class=internalDFN>
-<del class="diff-old">graph
-</del>
-<ins class="diff-chg">graphs
-</ins></a>,<ins class="diff-chg">
-the
-Presentation
-</ins><a data-link-type=dfn href=#dfn-graphs class=internalDFN><ins class="diff-chg">
-Graph
-</ins></a>,
+graph
+</a>
 expresses
 the
 <a data-link-type=dfn href=#dfn-verifiable-presentations class=internalDFN>
@@ -7912,12 +7824,10 @@ presentation
 itself,
 which
 contains
+<span style=color:#b4a7d6; class=color-text>
 presentation
-<del class="diff-old">metadata
-.
-</del>
-<ins class="diff-chg">metadata.
-</ins>
+metadata
+</span>.
 The
 <code>
 <del class="diff-old">verifiablePresentation
@@ -7928,13 +7838,8 @@ The
 property
 in
 the
-<ins class="diff-new">Presentation
-</ins>
 <a data-link-type=dfn href=#dfn-graphs class=internalDFN>
-<del class="diff-old">graph
-</del>
-<ins class="diff-chg">Graph
-</ins>
+graph
 </a>
 refers
 to
@@ -7944,66 +7849,38 @@ more
 <a data-link-type=dfn href=#dfn-verifiable-credentials class=internalDFN>
 verifiable
 credentials
-<del class="diff-old">(each
-</del>
-</a>,
-<ins class="diff-chg">each
-being
-one
-of
-the
-second
-information
-</ins><a data-link-type=dfn href=#dfn-graphs class=internalDFN><ins class="diff-chg">
-graphs
-</ins></a>,<ins class="diff-chg">
-i.e.,
-</ins>
+</a>
+(each
 a
 self-contained
-<ins class="diff-new">Credential
-</ins>
 <a data-link-type=dfn href=#dfn-graphs class=internalDFN>
-<del class="diff-old">graph
-</del>
-<ins class="diff-chg">Graph
-</ins>
+graph
 </a>
 ),
 which
 in
 turn
 contains
+<span style=color:#d5a6bd; class=color-text>
 credential
 metadata
+</span>
 and
-<del class="diff-old">claims
-.
-</del>
-<ins class="diff-chg">claims.
-</ins>
+<span style=color:#ffe599; class=color-text>
+claims
+</span>.
 The
 third
-<ins class="diff-new">information
-</ins>
 <a data-link-type=dfn href=#dfn-graphs class=internalDFN>
 graph
-</a>,
-<ins class="diff-chg">the
-Credential
-Proof
-</ins><a data-link-type=dfn href=#dfn-graphs class=internalDFN><ins class="diff-chg">
-Graph
-</ins></a>,
+</a>
 expresses
 the
+<span style=color:#b6d7a8; class=color-text>
 credential
 graph
-<del class="diff-old">proof
-,
-</del>
-<ins class="diff-chg">proof,
-</ins>
+proof
+</span>,
 which
 is
 usually
@@ -8012,26 +7889,16 @@ digital
 signature.
 The
 fourth
-<ins class="diff-new">information
-</ins>
 <a data-link-type=dfn href=#dfn-graphs class=internalDFN>
 graph
-</a>,
-<ins class="diff-chg">the
-Presentation
-Proof
-</ins><a data-link-type=dfn href=#dfn-graphs class=internalDFN><ins class="diff-chg">
-Graph
-</ins></a>,
+</a>
 expresses
 the
+<span style=color:#a4c2f4; class=color-text>
 presentation
 graph
-<del class="diff-old">proof
-,
-</del>
-<ins class="diff-chg">proof,
-</ins>
+proof
+</span>,
 which
 is
 usually
@@ -8339,10 +8206,7 @@ credential
   <span class=comment>// the entity that issued the credential</span>
   "issuer": "https://example.edu/issuers/565049",
   <span class=comment>// when the credential was issued</span>
-<del class="diff-old">  "issuanceDate": "2010-01-01T19:73:24Z",
-</del>
-<ins class="diff-chg">  "issuanceDate": "2010-01-01T19:23:24Z",
-</ins>
+  "issuanceDate": "2010-01-01T19:73:24Z",
   <span class=comment>// claims about the subjects of the credential</span>
   "credentialSubject": {
     <span class=comment>// identifier for the only subject of the credential</span>
@@ -8369,10 +8233,7 @@ credential
     <span class=comment>// purpose of this proof</span>
     "proofPurpose": "assertionMethod",
     <span class=comment>// the identifier of the public key that can verify the signature</span>
-<del class="diff-old">    "verificationMethod": "https://example.edu/issuers/keys/1",
-</del>
-<ins class="diff-chg">    "verificationMethod": "https://example.edu/issuers/565049/keys/1",
-</ins>
+    "verificationMethod": "https://example.edu/issuers/keys/1",
     <span class=comment>// the digital signature value</span>
     "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5X
       sITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUc
@@ -8536,10 +8397,7 @@ presentation
     "id": "http://example.edu/credentials/1872",
     "type": ["VerifiableCredential", "AlumniCredential"],
     "issuer": "https://example.edu/issuers/565049",
-<del class="diff-old">    "issuanceDate": "2010-01-01T19:73:24Z",
-</del>
-<ins class="diff-chg">    "issuanceDate": "2010-01-01T19:23:24Z",
-</ins>
+    "issuanceDate": "2010-01-01T19:73:24Z",
     "credentialSubject": {
       "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
       "alumniOf": {
@@ -8557,10 +8415,7 @@ presentation
       "type": "RsaSignature2018",
       "created": "2017-06-18T21:19:10Z",
       "proofPurpose": "assertionMethod",
-<del class="diff-old">      "verificationMethod": "https://example.edu/issuers/keys/1",
-</del>
-<ins class="diff-chg">      "verificationMethod": "https://example.edu/issuers/565049/keys/1",
-</ins>
+      "verificationMethod": "https://example.edu/issuers/keys/1",
       "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5X
         sITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUc
         X16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtj
@@ -8638,26 +8493,22 @@ LD-PROOFS
 ],
 Linked
 Data
-<del class="diff-old">Signatures
+Signatures
 [
+<cite>
+<a data-link-type=biblio href=#bib-ld-signatures class=bibref title="Linked Data Signatures">
 LD-SIGNATURES
+</a>
+</cite>
 ],
 2018
 RSA
 Signature
 Suite
 [
-</del>
-<ins class="diff-chg">Cryptographic
-Suites
-Registry[
-</ins>
 <cite>
-<del class="diff-old">LDS-RSA2018
-</del>
-<a data-link-type=biblio href=#bib-ldp-registry class=bibref title="Linked Data Cryptographic Suite Registry">
-<ins class="diff-chg">LDP-REGISTRY
-</ins>
+<a data-link-type=biblio href=#bib-lds-rsa2018 class=bibref title="The 2018 RSA Linked Data Signature Suite">
+LDS-RSA2018
 </a>
 </cite>
 ],
@@ -9236,9 +9087,6 @@ property
   ]</span>,
   "id": "http://example.edu/credentials/58473",
   "type": ["VerifiableCredential", "AlumniCredential"],
-<ins class="diff-new">  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
-</ins>
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "alumniOf": {
@@ -9763,9 +9611,6 @@ property
   ],
   <span class=highlight>"id": "http://example.edu/credentials/3732"</span>,
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
-<ins class="diff-new">  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
-</ins>
   "credentialSubject": {
     <span class=highlight>"id": "did:example:ebfeb1f712ebc6f1c276e12ec21"</span>,
     "degree": {
@@ -10222,9 +10067,6 @@ property
   ],
   "id": "http://example.edu/credentials/3732",
   <span class=highlight>"type": ["VerifiableCredential", "UniversityDegreeCredential"]</span>,
-<ins class="diff-new">  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
-</ins>
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
@@ -11097,9 +10939,6 @@ property
   ],
   "id": "http://example.edu/credentials/3732",
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
-<ins class="diff-new">  "issuer": "https://example.edu/issuers/565049",
-  "issuanceDate": "2010-01-01T00:00:00Z",
-</ins>
   <span class=highlight>"credentialSubject"</span>: {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
@@ -11186,9 +11025,6 @@ credential
   ],
   "id": "http://example.edu/credentials/3732",
   "type": ["VerifiableCredential", "RelationshipCredential"],
-<ins class="diff-new">  "issuer": "https://example.com/issuer/123",
-  "issuanceDate": "2010-01-01T00:00:00Z",
-</ins>
   "credentialSubject": <span class=highlight>[{
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "name": "Jayden Doe",
@@ -12098,10 +11934,7 @@ credential
   "id": "http://example.gov/credentials/3732",
   "type": ["VerifiableCredential", "UniversityDegreeCredential"],
   "issuer": "https://example.edu",
-<del class="diff-old">  "issuanceDate": "2010-01-01T19:73:24Z",
-</del>
-<ins class="diff-chg">  "issuanceDate": "2010-01-01T19:23:24Z",
-</ins>
+  "issuanceDate": "2010-01-01T19:73:24Z",
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "degree": {
@@ -12193,26 +12026,22 @@ LD-PROOFS
 ],
 Linked
 Data
-<del class="diff-old">Signatures
+Signatures
 [
+<cite>
+<a data-link-type=biblio href=#bib-ld-signatures class=bibref title="Linked Data Signatures">
 LD-SIGNATURES
+</a>
+</cite>
 ],
 2018
 RSA
 Signature
 Suite
-</del>
-<ins class="diff-chg">Cryptographic
-Suites
-Registries
-</ins>
 [
 <cite>
-<del class="diff-old">LDS-RSA2018
-</del>
-<a data-link-type=biblio href=#bib-ldp-registry class=bibref title="Linked Data Cryptographic Suite Registry">
-<ins class="diff-chg">LDP-REGISTRY
-</ins>
+<a data-link-type=biblio href=#bib-lds-rsa2018 class=bibref title="The 2018 RSA Linked Data Signature Suite">
+LDS-RSA2018
 </a>
 </cite>
 ],
@@ -12500,12 +12329,7 @@ credentialStatus
 </var>
 </dt>
 <dd>
-<del class="diff-old">The
-</del>
-<ins class="diff-chg">If
-present,
-the
-</ins>
+The
 value
 of
 the
@@ -12519,11 +12343,7 @@ property
 MUST
 </em>
 include
-<del class="diff-old">the:
-</del>
-<ins class="diff-chg">the
-following:
-</ins>
+the:
 <ul>
 <li>
 <code>
@@ -13503,8 +13323,8 @@ verifiable
 presentation
 </a>.
 </p>
-<figure id=fig-a-basic-claim-expressing-that-pat-s-date-of-birth-is-january-1-2010-date-encoding-would-be-determined-by-the-schema>
-<img src="diagrams/claim-example-2.svg" style="margin: auto; display: block; width: 50%;" alt="Pat has a property dateOfBirth whose value is 2010-01-01">
+<figure id=fig-a-basic-claim-expressing-that-pat-s-date-of-birth-is-2010-01-01t19-23-24z-date-encoding-would-be-determined-by-the-schema>
+<img src="diagrams/claim-example-2.svg" style="margin: auto; display: block; width: 50%;" alt="Pat has a property dateOfBirth whose value is 2010-01-01T19:73:24Z">
 <figcaption style="text-align: center;">
 Figure
 <bdi class=figno>
@@ -13521,12 +13341,7 @@ date
 of
 birth
 is
-<del class="diff-old">2010-01-01T19:23:24Z.
-</del>
-<ins class="diff-chg">January
-1,
-2010.
-</ins>
+2010-01-01T19:23:24Z.
 Date
 encoding
 would
@@ -14716,46 +14531,23 @@ Proofs
 LD-PROOFS
 </a>
 </cite>
-<del class="diff-old">],
-</del>
-<ins class="diff-chg">]
-and
-a
-variety
-of
-signature
-suites
-listed
-in
-the
-</ins>
+],
 Linked
 Data
-<del class="diff-old">Signatures
-</del>
-<ins class="diff-chg">Cryptographic
-Suites
-Registry
-</ins>
+Signatures
 [
 <cite>
-<del class="diff-old">LD-SIGNATURES
-</del>
-<a data-link-type=biblio href=#bib-ldp-registry class=bibref title="Linked Data Cryptographic Suite Registry">
-<ins class="diff-chg">LDP-REGISTRY
-</ins>
+<a data-link-type=biblio href=#bib-ld-signatures class=bibref title="Linked Data Signatures">
+LD-SIGNATURES
 </a>
 </cite>
-<del class="diff-old">],
+],
 and
 a
 variety
 of
 signature
 suites.
-</del>
-<ins class="diff-chg">]
-</ins>
 </li>
 <li>
 Provide
@@ -17404,29 +17196,10 @@ holder
   </div> <pre class=nohighlight>{
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-<del class="diff-old">    "https://www.w3.org/2018/credentials/examples/v1"
-</del>
-<ins class="diff-chg">    "https://www.w3.org/2018/credentials/examples/v1",
-    {
-        "@protected": true,
-        "VerifiablePresentationTermsOfUseExtension": {
-          "@id": "https://www.w3.org/2018/credentials/examples#VerifiablePresentationExtension",
-          "@context": {
-            "@protected": true,
-            "termsOfUse": {
-              "@id": "https://www.w3.org/2018/credentials#termsOfUse",
-              "@type": "@id"
-            }
-          }
-        }
-    }
-</ins>
+    "https://www.w3.org/2018/credentials/examples/v1"
   ],
   "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
-<del class="diff-old">  "type": ["VerifiablePresentation"],
-</del>
-<ins class="diff-chg">  "type": ["VerifiablePresentation", "VerifiablePresentationTermsOfUseExtension"],
-</ins>
+  "type": ["VerifiablePresentation"],
   "verifiableCredential": [{
     "@context": [
       "https://www.w3.org/2018/credentials/v1",
@@ -17455,114 +17228,11 @@ holder
       "target": "http://example.edu/credentials/3732",
       "action": ["3rdPartyCorrelation"]
     }]
-<del class="diff-old">  },
-</del>
-<ins class="diff-chg">  }]</span>,
-</ins>
+  }</span>,
   "proof": [ ... ]
 }
 </pre>
 </div>
-<div role=note class=note id=issue-container-generatedID-23>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-23>
-<span>
-<ins class="diff-new">Note
-</ins></span></div><p class=""><ins class="diff-new">
-Warning:
-The
-</ins><code><ins class="diff-new">
-termsOfUse
-</ins></code><ins class="diff-new">
-property
-is
-improperly
-defined
-within
-the
-</ins><code><ins class="diff-new">
-VerifiablePresentation
-</ins></code><ins class="diff-new">
-scoped
-context.
-This
-is
-a
-bug
-with
-the
-version
-1
-context
-and
-will
-be
-fixed
-in
-the
-version
-2
-context.
-In
-the
-meantime,
-implementors
-who
-wish
-to
-use
-this
-feature
-will
-be
-required
-to
-extend
-the
-context
-of
-their
-</ins><a data-link-type=dfn href=#dfn-verifiable-presentations class=internalDFN><ins class="diff-new">
-verifiable
-presentation
-</ins></a><ins class="diff-new">
-with
-an
-additional
-term
-that
-defines
-the
-</ins><code><ins class="diff-new">
-termsOfUse
-</ins></code><ins class="diff-new">
-property,
-which
-can
-then
-be
-used
-alongside
-the
-</ins><a data-link-type=dfn href=#dfn-verifiable-presentations class=internalDFN><ins class="diff-new">
-verifiable
-presentation
-</ins></a><ins class="diff-new">
-type
-property,
-in
-order
-for
-the
-term
-to
-be
-semantically
-recognized
-in
-a
-JSON-LD
-processor.
-</ins></div>
 <p>
 In
 the
@@ -17642,9 +17312,7 @@ terms
 under
 which
 the
-<a data-link-type=dfn href=#dfn-holders class=internalDFN>
 holder
-</a>
 created
 the
 <a data-link-type=dfn href=#dfn-presentations class=internalDFN>
@@ -17999,8 +17667,8 @@ type
 definition.
 </dd>
 </dl>
-<div role=note class=note id=issue-container-generatedID-24>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-24>
+<div role=note class=note id=issue-container-generatedID-23>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-23>
 <span>
 Note
 </span>
@@ -18080,7 +17748,7 @@ property
     "verifier": "https://example.edu/issuers/14",
     "evidenceDocument": "DriversLicense",
     "subjectPresence": "Physical",
-<del class="diff-old">    "documentPresence": "Physical"
+    "documentPresence": "Physical"
   },{
     "id": "https://example.edu/evidence/f2aeec97-fc0d-42bf-8ca7-0548192dxyzab",
     "type": ["SupportingActivity"],
@@ -18088,88 +17756,13 @@ property
     "evidenceDocument": "Fluid Dynamics Focus",
     "subjectPresence": "Digital",
     "documentPresence": "Digital"
-</del>
-<ins class="diff-chg">    "documentPresence": "Physical",
-    "licenseNumber": "123AB4567"
-</ins>
   }]</span>,
   "proof": { <span class=comment>...</span> }
 }
 </pre>
 </div>
-<div role=note class=note id=issue-container-generatedID-25>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-25>
-<span>
-<ins class="diff-chg">Note
-</ins></span></div><p class=""><ins class="diff-chg">
-In
-this
-</ins><code><ins class="diff-chg">
-evidence
-</ins></code><ins class="diff-chg">
-example,
-the
-</ins><a data-link-type=dfn href=#dfn-issuers class=internalDFN><ins class="diff-chg">
-issuer
-</ins></a><ins class="diff-chg">
-is
-asserting
-that
-they
-physically
-matched
-the
-</ins><a data-link-type=dfn href=#dfn-subjects class=internalDFN><ins class="diff-chg">
-subject
-</ins></a><ins class="diff-chg">
-of
-the
-</ins><a data-link-type=dfn href=#dfn-credential class=internalDFN><ins class="diff-chg">
-credential
-</ins></a><ins class="diff-chg">
-to
-a
-physical
-copy
-of
-a
-driver's
-license
-with
-the
-stated
-license
-number.
-This
-driver's
-license
-was
-used
-in
-the
-issuance
-process
-to
-verify
-that
-"Example
-University"
-verified
-the
-subject
-before
-issuance
-of
-the
-credential
-and
-how
-they
-did
-so
-(physical
-verification).
-</ins></div><div role=note class=note id=issue-container-generatedID-26><div aria-level=4 role=heading class="note-title marker" id=h-note-26>
+<div role=note class=note id=issue-container-generatedID-24>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-24>
 <span>
 Note
 </span>
@@ -19426,8 +19019,8 @@ presentation
 </span>
 </figcaption>
 </figure>
-<div role=note class=note id=issue-container-generatedID-27>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-27>
+<div role=note class=note id=issue-container-generatedID-25>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-25>
 <span>
 Note
 </span>
@@ -19752,8 +19345,8 @@ credential
 is
 wrong.
 </p>
-<div role=note class=note id=issue-container-generatedID-28>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-28>
+<div role=note class=note id=issue-container-generatedID-26>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-26>
 <span>
 Note
 </span>
@@ -19794,8 +19387,8 @@ identify
 individual
 claims.
 </div>
-<div role=note class=note id=issue-container-generatedID-29>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-29>
+<div role=note class=note id=issue-container-generatedID-27>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-27>
 <span>
 Note
 </span>
@@ -20387,8 +19980,8 @@ String
 type.
 </li>
 </ul>
-<div role=note class=note id=issue-container-generatedID-30>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-30>
+<div role=note class=note id=issue-container-generatedID-28>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-28>
 <span>
 Note
 </span>
@@ -21648,15 +21241,12 @@ the
 <code>
 vc
 </code>
-<ins class="diff-new">JWT
-</ins>
 <a data-link-type=dfn href=#dfn-claims class=internalDFN>
 claim
-<del class="diff-old">of
+</a>
+of
 the
 JWT.
-</del>
-</a>.
 As
 with
 all
@@ -22035,11 +21625,7 @@ JWT
 processors,
 the
 following
-<del class="diff-old">JWT-registered
-</del>
-<ins class="diff-chg">registered
-JWT
-</ins>
+JWT-registered
 claim
 names
 <em class=rfc2119 title=MUST>
@@ -22284,11 +21870,7 @@ of
 the
 JWT.
 </p>
-<div role=note class=note id=issue-container-generatedID-31>
-<div aria-level=7 role=heading class="note-title marker" id=h-note-31>
-<span>
-<ins class="diff-chg">Note
-</ins></span></div><p class="">
+<p>
 For
 more
 information
@@ -22318,7 +21900,7 @@ VC-IMP-GUIDE
 </cite>
 ]
 document.
-</div>
+</p>
 <p>
 This
 version
@@ -22373,18 +21955,15 @@ the
 <code>
 vc
 </code>
-<ins class="diff-new">JWT
-</ins>
 <a data-link-type=dfn href=#dfn-claims class=internalDFN>
 claim
-<del class="diff-old">of
+</a>
+of
 the
 JWT.
-</del>
-</a>.
 </p>
-<div role=note class=note id=issue-container-generatedID-32>
-<div aria-level=7 role=heading class="note-title marker" id=h-note-32>
+<div role=note class=note id=issue-container-generatedID-29>
+<div aria-level=7 role=heading class="note-title marker" id=h-note-29>
 <span>
 Note
 </span>
@@ -22921,7 +22500,9 @@ property
 </a>
 because
 the
+<code>
 JWT
+</code>
 encoding
 uses
 the
@@ -23121,7 +22702,9 @@ property
 </a>
 because
 the
+<code>
 JWT
+</code>
 encoding
 uses
 the
@@ -23147,7 +22730,9 @@ verifiable
 credentials
 </a>
 using
+<code>
 JWT
+</code>
 compact
 serialization.
 </p>
@@ -23298,17 +22883,16 @@ works
 well
 with
 the
-<a href="https://w3c-ccg.github.io/ld-proofs/">
+<a href="https://w3c-dvcg.github.io/ld-proofs/">
 Linked
 Data
 Proofs
-<del class="diff-old">,
+</a>,
+<a href="https://w3c-dvcg.github.io/ld-signatures/">
 Linked
 Data
 Signatures
-,
-</del>
-</a>
+</a>,
 and
 the
 associated
@@ -23317,9 +22901,7 @@ Linked
 Data
 Cryptographic
 Suites
-<del class="diff-old">,
-</del>
-</a>
+</a>,
 which
 are
 designed
@@ -23404,8 +22986,8 @@ a
 digital
 signature.
 </p>
-<div role=note class=note id=issue-container-generatedID-33>
-<div aria-level=5 role=heading class="note-title marker" id=h-note-33>
+<div role=note class=note id=issue-container-generatedID-30>
+<div aria-level=5 role=heading class="note-title marker" id=h-note-30>
 <span>
 Note
 </span>
@@ -23652,8 +23234,8 @@ use
 case
 specific.
 </p>
-<div role=note class=note id=issue-container-generatedID-34>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-34>
+<div role=note class=note id=issue-container-generatedID-31>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-31>
 <span>
 Note
 </span>
@@ -24355,8 +23937,8 @@ or
 group
 signatures.
 </p>
-<div role=note class=note id=issue-container-generatedID-35>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-35>
+<div role=note class=note id=issue-container-generatedID-32>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-32>
 <span>
 Note
 </span>
@@ -25286,8 +24868,8 @@ specific
 transaction.
 </li>
 </ul>
-<div role=note class=note id=issue-container-generatedID-36>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-36>
+<div role=note class=note id=issue-container-generatedID-33>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-33>
 <span>
 Note
 </span>
@@ -28593,8 +28175,8 @@ data
 }
 </pre>
 </div>
-<div role=note class=note id=issue-container-generatedID-37>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-37>
+<div role=note class=note id=issue-container-generatedID-34>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-34>
 <span>
 Note
 </span>
@@ -30092,8 +29674,8 @@ right-to-left
 }
 </pre>
 </div>
-<div role=note class=note id=issue-container-generatedID-38>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-38>
+<div role=note class=note id=issue-container-generatedID-35>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-35>
 <span>
 Note
 </span>
@@ -30694,8 +30276,8 @@ a
 subject
 </a>.
 </p>
-<div role=note class=note id=issue-container-generatedID-39>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-39>
+<div role=note class=note id=issue-container-generatedID-36>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-36>
 <span>
 Note
 </span>
@@ -31132,8 +30714,8 @@ assertionMethod
 </code>.
 </li>
 </ul>
-<div role=note class=note id=issue-container-generatedID-40>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-40>
+<div role=note class=note id=issue-container-generatedID-37>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-37>
 <span>
 Note
 </span>
@@ -32209,10 +31791,7 @@ property
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "ageOver": 21
     },
-<del class="diff-old">  "nonTransferable": "True",
-</del>
-<ins class="diff-chg">  "nonTransferable": true,
-</ins>
+  "nonTransferable": "True",
   "proof": { ..
   "verificationMethod": "did:example:ebfeb1f712ebc6f1c276e12ec21",
   ... }
@@ -32784,8 +32363,8 @@ given
 use
 case.
 </p>
-<div role=note class=note id=issue-container-generatedID-41>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-41>
+<div role=note class=note id=issue-container-generatedID-38>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-38>
 <span>
 Note
 </span>
@@ -33318,10 +32897,7 @@ subject
     "https://www.w3.org/2018/credentials/v1",
     "https://www.w3.org/2018/credentials/examples/v1"
   ],
-<del class="diff-old">  "id": "did:example:76e12ec21ebhyu1f712ebc6f1z2",
-</del>
-<ins class="diff-chg">  "id": "https://example.com/VP/0987654321",
-</ins>
+  "id": "did:example:76e12ec21ebhyu1f712ebc6f1z2",
   "type": ["VerifiablePresentation"],
   "verifiableCredential": [
     {
@@ -33329,31 +32905,17 @@ subject
        "https://www.w3.org/2018/credentials/v1",
        "https://www.w3.org/2018/credentials/examples/v1"
       ],
-<del class="diff-old">      "id": "http://example.gov/credentials/3732",
-</del>
-<ins class="diff-chg">      "id": "http://pharma.example.com/credentials/3732",
-</ins>
+      "id": "http://example.gov/credentials/3732",
       "type": ["VerifiableCredential", "PrescriptionCredential"],
-<del class="diff-old">      "issuer": "https://example.edu",
+      "issuer": "https://example.edu",
       "issuanceDate": "2010-01-01T19:73:24Z",
-</del>
-<ins class="diff-chg">      "issuer": "https://pharma.example.com/issuer/4",
-      "issuanceDate": "2010-01-01T19:23:24Z",
-</ins>
       "credentialSubject": {
         "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
         "prescription": {....}
       },
-<del class="diff-old">      "revocation": {
+      "revocation": {
         "id": "http://example.gov/revocations/738",
         "type": "SimpleRevocationList2017"
-</del>
-<ins class="diff-chg">      "credentialStatus": {
-        "id": "https://pharma.example.com/credentials/status/3#94567",
-        "type": "RevocationList2020Status",
-        "revocationListIndex": "94567",
-        "revocationListCredential": "https://pharma.example.com/credentials/status/3"
-</ins>
       },
       "proof": {....}
     },
@@ -33365,10 +32927,7 @@ subject
       "id": "https://example.com/VC/123456789",
       "type": ["VerifiableCredential", "PrescriptionCredential"],
       "issuer": "did:example:ebfeb1f712ebc6f1c276e12ec21",
-<del class="diff-old">      "issuanceDate": "2010-01-03T19:73:24Z",
-</del>
-<ins class="diff-chg">      "issuanceDate": "2010-01-03T19:53:24Z",
-</ins>
+      "issuanceDate": "2010-01-03T19:73:24Z",
       "credentialSubject": {
         "id": "did:example:76e12ec21ebhyu1f712ebc6f1z2",
         "prescription": {....}
@@ -33559,8 +33118,8 @@ subject's
 credential
 </a>.
 </p>
-<div role=note class=note id=issue-container-generatedID-42>
-<div aria-level=4 role=heading class="note-title marker" id=h-note-42>
+<div role=note class=note id=issue-container-generatedID-39>
+<div aria-level=4 role=heading class="note-title marker" id=h-note-39>
 <span>
 Note
 </span>
@@ -33673,10 +33232,7 @@ issuer
     "type": "LawEnforcement",
     "id": "did:example:ebfeb1276e12ec21f712ebc6f1c"
   },
-<del class="diff-old">  "issuanceDate": "2010-01-01T19:73:24Z",
-</del>
-<ins class="diff-chg">  "issuanceDate": "2010-01-01T19:23:24Z",
-</ins>
+  "issuanceDate": "2010-01-01T19:73:24Z",
   "credentialSubject": {
     "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
     "name": "Mr John Doe",
@@ -34496,7 +34052,7 @@ references
 </h3> <dl class=bibliography> <dt id=bib-cl-signatures>
 [CL-SIGNATURES]
 <dd>
-<a href="https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols">
+<a href="http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf">
 <cite>
 <del class="diff-old">A
 Signature
@@ -34519,11 +34075,9 @@ Peer
 Reviewed
 Paper.
 URL:
-http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf
 </del>
-</a>. Jan Camenisch; Anna Lysyanskaya. IBM Research. Peer Reviewed Paper. URL: <a href="https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols">
-<ins class="diff-chg">https://www.researchgate.net/publication/220922101_A_Signature_Scheme_with_Efficient_Protocols
-</ins>
+</a>. Jan Camenisch; Anna Lysyanskaya. IBM Research. Peer Reviewed Paper. URL: <a href="http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf">
+http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf
 </a>
 <dt id=bib-demographics>
 [DEMOGRAPHICS]
@@ -34665,28 +34219,11 @@ https://tools.ietf.org/html/draft-handrews-json-schema
 <dt id=bib-ld-proofs>
 [LD-PROOFS]
 <dd>
-<del class="diff-old">Linked
-Data
-Proofs
-.
-Manu
-Sporny;
-Dave
-Longley.
-Digital
-Verification
-Community
-Group.
-CG-DRAFT.
-URL:
-https://w3c-dvcg.github.io/ld-proofs/
-[LD-SIGNATURES]
-</del>
-<a href="https://w3c-ccg.github.io/ld-proofs/">
+<a href="https://w3c-dvcg.github.io/ld-proofs/">
 <cite>
 <del class="diff-old">Linked
 Data
-Signatures
+Proofs
 </del>
 <ins class="diff-chg">Linked Data Proofs
 </ins>
@@ -34702,29 +34239,20 @@ Community
 Group.
 CG-DRAFT.
 URL:
-https://w3c-dvcg.github.io/ld-signatures/
 </del>
-</a>. Manu Sporny; Dave Longley. Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/ld-proofs/">
-<ins class="diff-chg">https://w3c-ccg.github.io/ld-proofs/
-</ins>
+</a>. Manu Sporny; Dave Longley. Digital Verification Community Group. CG-DRAFT. URL: <a href="https://w3c-dvcg.github.io/ld-proofs/">
+https://w3c-dvcg.github.io/ld-proofs/
 </a>
-<del class="diff-old">[LDS-RSA2018]
-</del>
-<dt id=bib-ldp-registry>
-<ins class="diff-chg">[LDP-REGISTRY]
-</ins>
+<dt id=bib-ld-signatures>
+[LD-SIGNATURES]
 <dd>
-<a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/">
+<a href="https://w3c-dvcg.github.io/ld-signatures/">
 <cite>
-<del class="diff-old">The
-2018
-RSA
-Linked
+<del class="diff-old">Linked
 Data
-Signature
-Suite
+Signatures
 </del>
-<ins class="diff-chg">Linked Data Cryptographic Suite Registry
+<ins class="diff-chg">Linked Data Signatures
 </ins>
 </cite>
 <del class="diff-old">.
@@ -34738,11 +34266,47 @@ Community
 Group.
 CG-DRAFT.
 URL:
-https://w3c-dvcg.github.io/lds-rsa2018/
 </del>
-</a>. Manu Sporny; Drummond Reed; Orie Steele. Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/">
-<ins class="diff-chg">https://w3c-ccg.github.io/ld-cryptosuite-registry/
+</a>. Manu Sporny; Dave Longley. Digital Verification Community Group. CG-DRAFT. URL: <a href="https://w3c-dvcg.github.io/ld-signatures/">
+https://w3c-dvcg.github.io/ld-signatures/
+</a>
+<dt id=bib-ldp-registry>
+<ins class="diff-new">[LDP-REGISTRY]
+</ins><dd><a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/"><cite><ins class="diff-new">
+Linked Data Cryptographic Suite Registry
+</ins></cite></a>. Manu Sporny; Drummond Reed; Orie Steele. Credentials Community Group. CG-DRAFT. URL: <a href="https://w3c-ccg.github.io/ld-cryptosuite-registry/"><ins class="diff-new">
+https://w3c-ccg.github.io/ld-cryptosuite-registry/
+</ins></a>
+<dt id=bib-lds-rsa2018>
+[LDS-RSA2018]
+<dd>
+<a href="https://w3c-dvcg.github.io/lds-rsa2018/">
+<cite>
+<del class="diff-old">The
+2018
+RSA
+Linked
+Data
+Signature
+Suite
+</del>
+<ins class="diff-chg">The 2018 RSA Linked Data Signature Suite
 </ins>
+</cite>
+<del class="diff-old">.
+Manu
+Sporny;
+Dave
+Longley.
+Digital
+Verification
+Community
+Group.
+CG-DRAFT.
+URL:
+</del>
+</a>. Manu Sporny; Dave Longley. Digital Verification Community Group. CG-DRAFT. URL: <a href="https://w3c-dvcg.github.io/lds-rsa2018/">
+https://w3c-dvcg.github.io/lds-rsa2018/
 </a>
 <dt id=bib-linked-data>
 [LINKED-DATA]
